@@ -28,9 +28,11 @@ Solutia acopera urmatoarele domenii de activitate:
 
 ### Componente generale
 
+
 * **(o1)** Portal web de servicii electronice (inclusiv Portal web general){#c1}
 * **(c2)** Componenta pentru Managementul documentelor{#c2}
 * **(c3)** Componenta pentru aplicatii specifice GIS{#c3}
+
 
 
 ### Componente si module specifice protectiei mediului
