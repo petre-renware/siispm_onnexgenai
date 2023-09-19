@@ -13,7 +13,11 @@
 
 ### 0.1.3 ...
 
-* wip... (last used 230919piu_a)
+* wip...
+* 230919piu_b start codifying components in `index.md` & setting same `HTML id` for each of them - th s need TEST & CONTINUE if ok
+
+
+
 
 
 
