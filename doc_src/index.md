@@ -2,7 +2,7 @@
 
 
 
-# Sistem Informational Integrat specializat pentru Protectia Mediului
+# Sistem Informational Integrat Specializat pentru Protectia Mediului
 
 
 Acest sistem este o solutie gindita si elaborata pentru domeniul de **"Protectie a Mediului"**.
@@ -10,9 +10,19 @@ Acest sistem este o solutie gindita si elaborata pentru domeniul de **"Protectie
 Solutia este bazata pe platforma [*NexGenAI minim versiunea 2.3.3*](http://nexgenai.app/v2.3.3){ target="_blank" } si foloseste cu precadere componentele acesteia.
 
 
+
+
 ## Aria de acoperire
 
+<small markdown>
+
+!!! warning "Terminologie - componente, module, pachete"
+    Prin componente, module, pachete , aplicatii se va intelege la acest nivel simpla componenta logica software, nereperzentind nici un fel de "indicatie" privind modul de impachetare efectiv al elementelor software (cod)
+
+</small>
+
 Solutia acopera urmatoarele domenii de activitate:
+
 
 ### Componente generale
 
@@ -20,10 +30,8 @@ Solutia acopera urmatoarele domenii de activitate:
 * Componenta pentru Managementul documentelor
 * Componenta pentru aplicatii specifice GIS
 
-### Componente si module specifice protectiei mediului
 
-!!! warning "Terminologie - componente, module, pachete"
-    Prin componente, module, pachete se va intelege la acest nivel simpla componenta logica software, nereperzentind nici un fel de "indicatie" privind modul de impachetare efectiv al elementelor software (cod)
+### Componente si module specifice protectiei mediului
 
 * Componenta aplicativ Substante chimice
 * Componenta aplicativ pentru Registrul National EMAS

@@ -6,13 +6,15 @@ copyright: 'Copyright (c) RENware Software Systems'
 
 nav:
     - SII Protectia Mediului:
-        - Acasa: index.md #FIXME consider this one: `810-DSGN/130.02-Overview.md`
+        - Acasa: index.md #FIXME index as being a RECOMMENDED file, pls consider to directly redirect to: `810-DSGN/130.02-Overview.md`
         - Vedere de ansamblu: 810-DSGN/130.02-Overview.md
         - High Level Design:
             - Conceptele sistemului: wip.md #TODO... System Concepts...
             - Arhitectura: 810-DSGN/810.02-System_Landscape.md
         - Detailed Level Design:
             - proces xxx: 810-DSGN/810.05a-bcat_System_Process.md #FIXME consider to change to SIIPM processes / it's just as template
+        - Lista imaginilor:
+            - xxx: wip.md #FIXME - here to list all pictures...
     - Manual SIIPM (PDF): pdfs/print_page.html/print_page.pdf
     - About:
         - Licenta mea: wip.md #TODO tbd... este un http catre o ruta dinamica din produs
@@ -126,7 +128,7 @@ plugins:
 #NOTE provide material theme
 theme:
     # language: en #NOTE FUTURE FEATURE - should first have a translation...
-    logo: pictures/SIIPM_logo.png #FIXME MUST change that picture
+    logo: pictures/SIISPM_logo.png
     name: material
     features:
         - navigation.tabs # left navigation side bar, all level 1 will be shown as top navigation bar
