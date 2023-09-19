@@ -20,7 +20,7 @@ Solutia acopera urmatoarele domenii de activitate:
 * Componenta pentru Managementul documentelor
 * Componenta pentru aplicatii specifice GIS
 
-## Componente si module specifice protectiei mediului
+### Componente si module specifice protectiei mediului
 
 !!! warning "Terminologie - componente, module, pachete"
     Prin componente, module, pachete se va intelege la acest nivel simpla componenta logica software, nereperzentind nici un fel de "indicatie" privind modul de impachetare efectiv al elementelor software (cod)
