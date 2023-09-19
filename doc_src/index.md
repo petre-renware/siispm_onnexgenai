@@ -1,63 +1,59 @@
-![booklab_logo](pictures/booklab_logo.png){ width="300" }
-
-
-<!-- #NOTE ***************************************************************************** TEST HTML FORM
----pui un div cu markdown ? Better...
-<form action="XXX_TEST_ROUTE/xxxfile">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" value="John"><br>
-
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form>
-
-# Note si explicatii rezultat:
-
-    - caz 0: util acces **`booklab_app`**: `<form method="POST" action="http://localhost:5000">` unde 5000 este portul ales
-
-    - caz 1: cu `action="/XXX_TEST_ROUTE"` ==> raspunsul a fost request catre `/XXX_TEST_ROUTE?fname=John&lname=Doe` url ABSOLUT
-
-    - caz 2: cu `action="XXX_TEST_ROUTE"` ==> raspunsul a fost request catre `http://server_name.../XXX_TEST_ROUTE?fname=John&lname=Doe` url RELATIV la servername
-
-    - caz 3: cu `action="XXX_TEST_ROUTE/xxxfile"` ==> raspunsul a fost request catre `http://server_name.../XXX_TEST_ROUTE/xxxfile?fname=John&lname=Doe` url RELATIV la servername
-
-*********************************************************************************************************** -->
+![booklab_logo](pictures/SIISPM_logo.png){ width="300" }
 
 
 
-
-# BookLab
-
-<small markdown>by RENware Software Systems</small>
-
-Welcome to **BookLab** world, your personal assistant in putting your ideas in practice and making your books as you dreamed them.
-
-Bine ai venit in lunea **BookLab**, asistentul tau personal in punerea ideilor tale in practica si realizarea cartlior si materialelor tale asa cum le-ai visat.
+# Sistem Informational Integrat specializat pentru Protectia Mediului
 
 
-Ce poti face mai departe:
+Acest sistem este o solutie gindita si elaborata pentru domeniul de **"Protectie a Mediului"**.
 
-* **[sa vezi catalogul cartilor tale](bcat/)** #TODO BCAT route
-
-* **[sa incepi o noua carte](newb/)** #TODO NEWB route
-
-* **[sa creezi si sa editezi continutului unui material](edtm/)** #TODO EDTM route
-
-* **[sa organizezi materialele in diverse sectiuni](orgm/)** #TODO 0RGM route
-
-* **[sa vizualizezi si sa testezi materiale realizate](prvb/)** #TODO PRVB route
-
-* **[sa faci asamblarea finala a cartii in forma electronica](dplb/)** #TODO DPLB route
+Solutia este bazata pe platforma [*NexGenAI minim versiunea 2.3.3*](http://nexgenai.app/v2.3.3){ target="_blank" } si foloseste cu precadere componentele acesteia.
 
 
-Daca inca nu esti sigur sau hotarit, poti sa revezi doumentatia sistemului:
+## Aria de acoperire
 
-* **[sa citesti "Vederea de ansamblu" a BookLab](help/130.02-Overview.md){ target="_blank" }**
+Solutia acopera urmatoarele domenii de activitate:
 
-* **[sa revezi manualele de utilizare](help/880.30-EUMA_catalog.md){ target="_blank" }**
+### Componente generale
 
-* **[sa revezi manualele de configurare](help/880.30-ADMA_catalog.md){ target="_blank" }**
+* Portal web de servicii electronice (inclusiv Portal web general)
+* Componenta pentru Managementul documentelor
+* Componenta pentru aplicatii specifice GIS
+
+## Componente si module specifice protectiei mediului
+
+!!! warning "Terminologie - componente, module, pachete"
+    Prin componente, module, pachete se va intelege la acest nivel simpla componenta logica software, nereperzentind nici un fel de "indicatie" privind modul de impachetare efectiv al elementelor software (cod)
+
+* Componenta aplicativ Substante chimice
+* Componenta aplicativ pentru Registrul National EMAS
+* Componenta aplicativ avize de mediu, acorduri de mediu, autorizatii de mediu si autorizatii integrate de mediu
+* Componenta aplicativ Protectia Atmosferei
+* Componenta aplicativ Laboratoare
+* Componenta aplicativ Monitorizare factori de mediu (radioactivitate)
+* Componenta aplicativ pentru Registrul SEVESO
+* Componenta aplicativ Emisii Industriale
+* Componenta aplicativ EPRTR (date aferente emisiilor si transferurilor de poluanti)
+* Componenta aplicativ Sol si subsol
+* Componenta aplicativ Ambalaje
+* Componenta aplicativ Deseuri cu specializare pe produsele de tip Uleiuri
+* Componenta aplicativ Colectare selectiva
+* Componenta aplicativ Vehicule scoase din uz
+* Componenta aplicativ Transport Deseuri
+* Componenta aplicativ Deseuri baterii si acumulatori
+* Componenta aplicativ Deseuri echipamente electrice si electronice
+* Componenta aplicativ Situri Natura 2000
+* Componenta aplicativ privind derogarile si capturile si uciderile accidentale ale speciilor strict protejate
+* Componenta aplicativ Autorizarea activitatilor de recoltare/capturare si/sau comercializare a speciilor de flora si fauna salbatice
+* Componenta aplicativ URS (alungarile, tranchilizarile  si relocarile ori extragerile prin eutanasiere sau împuscare a exemplarelor de urs)
+* Componenta aplicativ Gestiunea incidentelor provocate de speciile de interes cinegetic asupra culturilor agricole, silvice si animalelor domestice
+* Componenta aplicativ ZOO
+* Componenta aplicativ OMG si MMG (Organisme si Microorganisme modificate genetic)
+* Componenta aplicativ Eticheta UE ecologica
+* Componenta aplicativ GES (Registrul National al emisiilor de gaze)
+* Componenta aplicativ Registrul national al operatorilor economici care nu se supun autorizarii de mediu 
+* Componenta aplicativ de gestionare a ecosistemelor si a serviciilor acestora în vederea sprijinirii luarii deciziilor de mediu
+
 
 
 
