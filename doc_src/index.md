@@ -4,6 +4,8 @@
 
 # Sistem Informational Integrat Specializat pentru Protectia Mediului
 
+***Cuprins:***
+[TOC]
 
 Acest sistem este o solutie gindita si elaborata pentru domeniul de **"Protectie a Mediului"**.
 
