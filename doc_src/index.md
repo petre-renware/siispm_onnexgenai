@@ -28,16 +28,16 @@ Solutia acopera urmatoarele domenii de activitate:
 
 ### Componente generale
 
-* **(co1)** Portal web de servicii electronice (inclusiv Portal web general){#co01}
-* **(co2)** Componenta pentru Managementul documentelor
-* **(co3)** Componenta pentru aplicatii specifice GIS
+* **(o1)** Portal web de servicii electronice (inclusiv Portal web general){#c1}
+* **(c2)** Componenta pentru Managementul documentelor{#c2}
+* **(c3)** Componenta pentru aplicatii specifice GIS{#c3}
 
 
 ### Componente si module specifice protectiei mediului
 
-* Componenta aplicativ Substante chimice
-* Componenta aplicativ pentru Registrul National EMAS
-* Componenta aplicativ avize de mediu, acorduri de mediu, autorizatii de mediu si autorizatii integrate de mediu
+* **(c4)** Componenta aplicativ Substante chimice{#c4}
+* **(c5)** Componenta aplicativ pentru Registrul National EMAS{#c5}
+* **(c6)** Componenta aplicativ avize de mediu, acorduri de mediu, autorizatii de mediu si autorizatii integrate de mediu{#c6}
 * Componenta aplicativ Protectia Atmosferei
 * Componenta aplicativ Laboratoare
 * Componenta aplicativ Monitorizare factori de mediu (radioactivitate)
