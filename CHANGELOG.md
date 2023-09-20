@@ -14,7 +14,8 @@
 
 ## 0.4 system general landscape component #TODO_xxx and concepts
 
-* wip... (last item used 230920piu_d)
+* wip...
+* 230920piu_e updated System Overview doc to refer System Landscape doc for COMPLIANCE and this should be done for every component when DSGN is ready
 
 
 
