@@ -753,7 +753,7 @@
 <li><strong>(c27)</strong> Componenta aplicativ OMG si MMG (Organisme si Microorganisme modificate genetic)</li>
 <li><strong>(c28)</strong> Componenta aplicativ Eticheta UE ecologica</li>
 <li><strong>(c29)</strong> Componenta aplicativ GES (Registrul National al emisiilor de gaze)</li>
-<li><strong>(c30)</strong> Componenta aplicativ Registrul national al operatorilor economici care nu se supun autorizarii de mediu </li>
+<li><strong>(c30)</strong> Componenta aplicativ Registrul national al operatorilor economici care nu se supun autorizarii de mediu</li>
 <li><strong>(c31)</strong> Componenta aplicativ de gestionare a ecosistemelor si a serviciilor acestora în vederea sprijinirii luarii deciziilor de mediu</li>
 </ul>
 <h2 id="810-dsgn-130.02-overview-pasii-urmatori">Pasii urmatori</h2>
@@ -778,6 +778,7 @@
 <ul>
 <li><a href="#810-dsgn-120.cpts_system_concepts-conceptele-sistemului">Conceptele sistemului</a><ul>
 <li><a href="#810-dsgn-120.cpts_system_concepts-introducere">Introducere</a></li>
+<li><a href="#810-dsgn-120.cpts_system_concepts-definitii-si-termeni">Definitii si termeni</a></li>
 </ul>
 </li>
 </ul>
@@ -785,6 +786,15 @@
 <hr />
 <h2 id="810-dsgn-120.cpts_system_concepts-introducere">Introducere</h2>
 <p>Acest document prezinta cele mai importante si relevante concepte utilizate in acest sistem.</p>
+<h2 id="810-dsgn-120.cpts_system_concepts-definitii-si-termeni">Definitii si termeni</h2>
+<dl>
+<dt><strong>Beneficiar</strong></dt>
+<dd>reprezinta beneficiarul sistemului SIISPM in sensul de proprietarul a unei licente de utilizare a acestuia. Este cunoscut si sub termenul de <code>Client</code></dd>
+<dt><strong>Consumator</strong></dt>
+<dd>reprezinta orice utilizator final ce acceseaza sistemul in scopul rezolvarii unor doleante proprii in relatie cu "Beneficiarul". Din punct de veder al sistemului nu se face diferenta intre consumatori persoane fizice si consumatori persoane juridice, acest fiind un aspect reglementat prin <em>roluri si drepturi de acces</em></dd>
+<dt><strong>Servicii (asigurate de sistem)</strong></dt>
+<dd>reprezinta orice serviciu pe care sistemul in ofera il forma electronica catre potentialii sai consumatori, INDIFERENT de materializarea formei electronice sub care il ofera (acces <em>GUI</em> dintr-un browser, acces <em>TUI</em> (Text User Interface) dintr-un terminal, acces la nivel de <em>API</em>, etc)</dd>
+</dl>
 <p><img alt="wip..." src="pictures/under_maintenance.png" width="100" /></p>
 <p>-#TODO UPCOMING...</p></section><section class="print-page" id="810-dsgn-810.02-system_landscape"><p><img align="left" alt="SIISPM_logo" src="pictures/SIISPM_logo.png" width="55" />
 <small markdown><strong>SIISPM System</strong>
@@ -795,8 +805,15 @@
 <ul>
 <li><a href="#810-dsgn-810.02-system_landscape-arhitectura-sistemului">Arhitectura sistemului</a><ul>
 <li><a href="#810-dsgn-810.02-system_landscape-introducere">Introducere</a></li>
-<li><a href="#810-dsgn-810.02-system_landscape-arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</a></li>
-<li><a href="#810-dsgn-810.02-system_landscape-next-levels-todo-hereuare-">... next levels ... &lt;!--#TODO hereuare -&gt;</a></li>
+<li><a href="#810-dsgn-810.02-system_landscape-arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</a><ul>
+<li><a href="#810-dsgn-810.02-system_landscape-c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">(c1) Portal web de servicii electronice (inclusiv Portal web general) </a></li>
+<li><a href="#810-dsgn-810.02-system_landscape-considerente-de-securitate">Considerente de securitate </a></li>
+</ul>
+</li>
+<li><a href="#810-dsgn-810.02-system_landscape-arhitectura-la-nivelul-componentelor-functionale-de-buisness">Arhitectura la nivelul componentelor functionale de buisness</a><ul>
+<li><a href="#810-dsgn-810.02-system_landscape-upcoming-next-levels">UPCOMING next levels... </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -812,9 +829,58 @@
 <h2 id="810-dsgn-810.02-system_landscape-arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</h2>
 <p>Nivelul de <strong>TOP</strong> reprezinta "punctul cel mai de extern de expunere si adresare a sistemului", cel care va fi folosiit in mod curent de marea majoritate a utilizatorilor. Arhitectura vazuta la acest nivel se prezinta in diagrama urmatoare:</p>
 <p><img alt="fig_01" src="pictures/fig01_structura_sistemului.png" /></p>
-<h2 id="810-dsgn-810.02-system_landscape-next-levels-todo-hereuare-">... next levels ... &lt;!--#TODO hereuare -&gt;</h2>
+<p>La acest nivel <strong>SIISPM</strong> se prezinta ca un set de <em>servicii majore</em> si relevante pentru <em>consumatorii finali</em>. Aceste sunt asigurate prin si deservite de catre portalul principal al companiei sau de catre o pagina specializata, pagina relativ simpla ce permite accesul nerestrictionat oricarui vizitator (<em>master page</em> sau <em>landing page</em>). Aceasta componenta se refera la <a href="#810-dsgn-130.02-overview-componente-generale"><strong>(c1)</strong> Portal web de servicii electronice (inclusiv Portal web general)</a> prezentata in "Vedere de ansamblu".</p>
+<h3 id="810-dsgn-810.02-system_landscape-c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">(c1) Portal web de servicii electronice (inclusiv Portal web general) <!--#NOTE heading 3 --></h3>
+<p>Astfel plecind din portalul existent al companiei beneficiare, sau dintr-pagina dedicata (Master / Landing Page), sistemul va prezenta 4 tipuri de <strong>servicii majore</strong> ca <code>URL</code>-uri distincte: <!-- -#NOTE mk-UTF8 (din ANPM matrice complianta 64-67) --></p>
+<ul>
+<li>
+<p><strong>Solicitare</strong> – servicii prin care consumatorii transmit catre beneficiar o solicitare si in urma procesarii acesteia de catre beneficiar primesc un document de raspuns</p>
+</li>
+<li>
+<p><strong>Raportare</strong> – servicii prin care consumatorii transmit catre beneficiar informatii structurate. Pentru acest tip de servicii, beneficiarul nu emite un document de raspuns, ci doar confirmari privind primirea, procesarea și validarea (ca format NU ca si continut) informatiei respective</p>
+</li>
+<li>
+<p><strong>Notificari</strong> - servicii prin care consumatorii transmit catre beneficiar informatii structurate sau nestructurate. Pentru acest tip de servicii, beneficiarul nu emite un document de raspuns, ci doar confirmari privind primirea, procesarea și validarea (ca format NU ca si continut) notificarii respective <!-- -#FIXME aceasta cred ca ar trebui sa fie ANPM --to-- consumator | modelul acest este deja la item anterior "Raportare" --></p>
+</li>
+<li>
+<p><strong>Prezentare</strong> – servicii prin care consumatorii pot accesa informatiile publicate de catre beneficiar pentru domeniile sale de competenta</p>
+</li>
+</ul>
+<p>Considerind <strong><code>&lt;SIISPM_root&gt;</code></strong> baza URL de la care se pleaca (publicat(a) de catre beneficiarul sistemului), vor fi “prezente” urmatoarele rute (<strong><em>numite si zone in continuarea documentului</em></strong>):</p>
+<ul>
+<li>
+<p><code>&lt;SIISPM_root&gt;/solicitari/...</code> - pentru servicii de tip <strong>Solicitare</strong></p>
+</li>
+<li>
+<p><code>&lt;SIISPM_root&gt;/raportare/...</code> - pentru servicii de tip <strong>Raportare</strong></p>
+</li>
+<li>
+<p><code>&lt;SIISPM_root&gt;/notificari/...</code> - pentru servicii de tip <strong>Notificari</strong></p>
+</li>
+<li>
+<p><code>&lt;SIISPM_root&gt;/prezentare/...</code> - pentru servicii de tip <strong>Prezentare</strong></p>
+</li>
+</ul>
+<p>Aceste rute sunt aferente serviciilor (zonelor functionale) asigurate de sistemul SIISPM. Intre acestea se vor vor putea face redirectari ori de cite ori va fi nevoie cu respectarea regulior de securitate specifice zonei respective.</p>
+<h3 id="810-dsgn-810.02-system_landscape-considerente-de-securitate">Considerente de securitate <!--#NOTE heading 3 --></h3>
+<p>Fiecare zona aferenta unei rute (din cele 4 enumerate mai sus) va implementa <em>propriile politici de securitate</em> (de ex autentificare si autorizare). De asemenea va fi disponibil si un <em>set de politici de securitate comun</em> tuturor zonelor, modificarea acestuia afectind toate zonele.</p>
+<p>Zonele vor mosteni setul <em>comun de reguli de securitate dar il vor putea supracsrie (overwrite)</em>. In caz de <em>conflicte</em> (colisions) intre mai multe reguli de securitate, regulile proprii zonei vor prima asupra celorlalte."</p>
+<p>O zona aferenta uni serviciu apelat de catre un consumator va permite incarcarea de documente si transferul acestora catre modulul de management de documente (<strong>(c2)</strong> Componenta pentru Managementul documentelor) prin intermediul API-ului acestuia. Confirmarea preluarii unui document se va face de catre zona de servicii dedicata notificarilor ce va fi la rindul ei apelata la incarcarea unui document insa in mod "asincron intirziat" (delayed async) pentru a evita blocarea inutila a proceselor. <!-- -#NOTE din ANPM matrice complianta 68 --></p>
+<p>Pentru toate zonele aferente serviciilor (enumerate in sectiunea anterioara) vor prezenta: <!-- -#NOTE din ANPM matrice complianta 70 --></p>
+<ul>
+<li>
+<p>o sectiune introductiva ("marcata" grafic distinct pentru vizibilitate) ce va cuprinde o descriere a serviciului respectiv urmata de</p>
+</li>
+<li>
+<p>o sectiune dedicata detaliilor in care vor fi enumerate "item-urile" aferente, de orice tip sau natura ar fi (documente, servicii, etc) si folosind un set de pictograme (icone miniaturale) diferite pentru fiecare tip / natura astfel incit sa existe un minim feedback vizual mai mult decit simplul text. Aceste item-uri vor fi deprezentate ca <code>link HTML</code> daca reprezinta ceva ce poate fi accesat "mai departe" si prezinta interes pentru utilizator pe un flux logic al acestuia</p>
+</li>
+</ul>
+<h2 id="810-dsgn-810.02-system_landscape-arhitectura-la-nivelul-componentelor-functionale-de-buisness">Arhitectura la nivelul componentelor functionale de buisness</h2>
+<!--#TODO se prezinta O POZA AICI CU TOATE COMPONENTELE - va fi cam mare, vezi cum o asezi sau o faci din mai multe... -->
+
 <p><img alt="wip..." src="pictures/under_maintenance.png" width="100" /></p>
-<p>-#TODO UPCOMING...</p></section><h1 class='nav-section-title-end'>Ended: High Level Design</h1>
+<p>-#TODO UPCOMING...</p>
+<h3 id="810-dsgn-810.02-system_landscape-upcoming-next-levels">UPCOMING next levels... <!--#TODO se prezinta componenta cu componenta --></h3></section><h1 class='nav-section-title-end'>Ended: High Level Design</h1>
                         <h2 class='nav-section-title' id='section-detailed-level-design'>
                             Detailed Level Design <a class='headerlink' href='#section-detailed-level-design' title='Permanent link'>↵</a>
                         </h2>
