@@ -10,7 +10,15 @@
 
 ## 0.3 system general landscape and concepts
 
-* wip... (last used 2309920piu_a)
+* wip...
+
+* 2309920piu_b partial System Landscape top level architecture & System Concepts general terms
+
+
+
+
+
+
 
 
 
