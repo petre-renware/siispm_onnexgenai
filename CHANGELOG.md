@@ -15,6 +15,7 @@
 ## 0.4 system general landscape component #TODO_xxx and concepts
 
 * wip...
+* tbd... same thing as `230920piu_e` but in Sys Landscape (ref created compon) WHAT USE & REF ==> `http://nexgenai.app/v2.3.3`
 * 230920piu_e updated System Overview doc to refer System Landscape doc for COMPLIANCE and this should be done for every component when DSGN is ready
 
 
