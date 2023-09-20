@@ -12,7 +12,7 @@
 
 * wip...
 
-* ... 2309920piu_b System Landscape complete top level architecture
+* 2309920piu_b partial System Landscape top level architecture & System Concepts general terms
 
 
 
