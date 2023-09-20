@@ -12,14 +12,15 @@
 
 
 
+## 0.4 system general landscape component #TODO_xxx and concepts
 
-## 0.3 system general landscape TOP LEVEL and concepts
+* wip... (last item used 230920piu_d)
 
-* wip...
 
-* 230920piu_d review & update System Landscape ref `2309920piu_b`
-* 230920piu_c review & update System Concepts ref `2309920piu_b`
-* 230920piu_b partial System Landscape top level architecture & System Concepts general terms
+
+
+
+
 
 
 
@@ -33,6 +34,15 @@
 
 
 -#NOTE to be archived from here to down .................
+
+## 0.3 system general landscape TOP LEVEL and concepts
+
+* 230920piu_d review & update System Landscape ref `2309920piu_b`
+* 230920piu_c review & update System Concepts ref `2309920piu_b`
+* 230920piu_b partial System Landscape top level architecture & System Concepts general terms
+
+
+
 
 ## 0.2 system overview
 
