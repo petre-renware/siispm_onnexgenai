@@ -6,7 +6,6 @@ copyright: 'Copyright (c) RENware Software Systems'
 
 nav:
     - SII Protectia Mediului:
-        - Acasa: index.md #FIXME index as being a RECOMMENDED file, pls consider to directly redirect to: `810-DSGN/130.02-Overview.md`
         - Vedere de ansamblu: 810-DSGN/130.02-Overview.md
         - High Level Design:
             - Conceptele sistemului: wip.md #TODO... System Concepts...
