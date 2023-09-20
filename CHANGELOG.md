@@ -8,7 +8,7 @@
 <small>**- (F)** mark items that are FEATURES</small>
 
 
-## 0.2 system general landscape and concepts
+## 0.3 system general landscape and concepts
 
 * wip... (last used 2309920piu_a)
 
