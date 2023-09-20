@@ -10,19 +10,18 @@
 
 ## 0.2 system general landscape and concepts
 
-* wip... (last used 230920piu_a)
+* wip... (last used 2309920piu_a)
 
 
 
 
 
 
+## 0.2 system overview
 
-
-
-
-
-
+* 2309920piu_a close System Overview (finalized with current status and link to next doc to read)
+* 230920piu_c made an initial set of pictures (`doc_src/pictures/`)
+* 230920piu_b fixed all entries, name of refs too booklab - refactored for `SIISPM` or `siipm`
 
 
 

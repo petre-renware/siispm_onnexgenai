@@ -8,12 +8,12 @@ nav:
     - SII Protectia Mediului:
         - Vedere de ansamblu: 810-DSGN/130.02-Overview.md
         - High Level Design:
-            - Conceptele sistemului: wip.md #TODO... System Concepts...
+            - Conceptele sistemului: 810-DSGN/120.CPTS_System_Concepts.md
             - Arhitectura: 810-DSGN/810.02-System_Landscape.md
         - Detailed Level Design:
             - proces xxx: 810-DSGN/810.05a-bcat_System_Process.md #FIXME consider to change to SIIPM processes / it's just as template
         - Lista imaginilor:
-            - xxx: wip.md #FIXME - here to list all pictures...
+            - fig01 Struct Generala Sistem: pictures/fig01_structura_sistemului.png
     - Manual SIIPM (PDF): pdfs/print_page.html/print_page.pdf
     - About:
         - Licenta mea: wip.md #TODO tbd... este un http catre o ruta dinamica din produs
@@ -174,7 +174,7 @@ site_dir: './static_portal' #NOTE: [piu] this is the working directory; final is
 use_directory_urls: false # allow link between pages to work properly as static site an "callable" as `file:///...`
 
 
-#NOTE dirs to exclude at BookLab project creation
+#NOTE dirs to exclude at SIISPM project creation
 exclude_docs: |
   pyenv/
 
