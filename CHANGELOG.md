@@ -11,8 +11,9 @@
 ## 0.3 system general landscape and concepts
 
 * wip...
-* #FIXME tbd... ref 230920piu_a BOTIFICAREA si RAPOETAREA sunt idetice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers...
+* #FIXME tbd... ref 230920piu_a NOTIFICAREA si RAPORTAREA sunt identice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers...
 
+* 230920piu_a review & update System Concepts
 * 2309920piu_b partial System Landscape top level architecture & System Concepts general terms
 
 
