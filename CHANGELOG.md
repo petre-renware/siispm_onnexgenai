@@ -12,7 +12,7 @@
 
 * wip...
 
-* 230920piu_b fixed all entries, name of refs too booklab - refactored for `siispm` or `siipm`
+* 230920piu_b fixed all entries, name of refs too booklab - refactored for `SIISPM` or `siipm`
 
 
 

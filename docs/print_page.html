@@ -688,11 +688,11 @@
                         <h1 class='nav-section-title' id='section-sii-protectia-mediului'>
                             SII Protectia Mediului <a class='headerlink' href='#section-sii-protectia-mediului' title='Permanent link'>↵</a>
                         </h1>
-                        <section class="print-page" id="810-dsgn-130.02-overview"><p><img align="left" alt="siispm_logo" src="pictures/SIISPM_logo.png" width="55" />
+                        <section class="print-page" id="810-dsgn-130.02-overview"><p><img align="left" alt="SIISPM_logo" src="pictures/SIISPM_logo.png" width="55" />
 <small markdown><strong>SIISPM System</strong><br>
 <em>(c) 2023 RENware Software Systems</em>
 </small><br><br></p>
-<p><img alt="siispm_logo" src="810-DSGN/.../pictures/SIISPM_logo.png" width="300" /></p>
+<p><img alt="SIISPM_logo" src="810-DSGN/.../pictures/SIISPM_logo.png" width="300" /></p>
 <h1 id="810-dsgn-130.02-overview-sistem-informational-integrat-specializat-pentru-protectia-mediului">Sistem Informational Integrat Specializat pentru Protectia Mediului</h1>
 <p><strong><em>Cuprins:</em></strong></p>
 <div class="toc">
@@ -760,8 +760,8 @@
                         <h2 class='nav-section-title' id='section-high-level-design'>
                             High Level Design <a class='headerlink' href='#section-high-level-design' title='Permanent link'>↵</a>
                         </h2>
-                        <section class="print-page" id="810-dsgn-810.02-system_landscape"><p><img align="left" alt="siispm_logo" src="pictures/SIISPM_logo.png" width="55" />
-<small markdown><strong>siispm System</strong><br>
+                        <section class="print-page" id="810-dsgn-810.02-system_landscape"><p><img align="left" alt="SIISPM_logo" src="pictures/SIISPM_logo.png" width="55" />
+<small markdown><strong>SIISPM System</strong><br>
 <em>(c) 2023 RENware Software Systems</em>
 </small><br><br></p>
 <h1 id="810-dsgn-810.02-system_landscape-arhitectura-sistemului">Arhitectura sistemului</h1>
@@ -787,11 +787,11 @@
 </div>
 <hr />
 <h2 id="810-dsgn-810.02-system_landscape-introducere">Introducere</h2>
-<p>Arhitectura sistemului pleaca de la structura de basa a acestuia, structura redata "pe scurt" mai jos. Diagrama putin mai elaborata dar cu descrierea componentelor se gaseste in <a href="#help-130.02-overview.md-structura-si-componenta-siispm">documentul <code>130.02-Overview.md</code>, sectiunea "Structura si componenta siispm"</a> ce <em>se recomanda a fi citit</em> inainte de a incepe studiul acestuia, pentru o mai buna intelegere a lui.</p>
+<p>Arhitectura sistemului pleaca de la structura de basa a acestuia, structura redata "pe scurt" mai jos. Diagrama putin mai elaborata dar cu descrierea componentelor se gaseste in <a href="#help-130.02-overview.md-structura-si-componenta-SIISPM">documentul <code>130.02-Overview.md</code>, sectiunea "Structura si componenta SIISPM"</a> ce <em>se recomanda a fi citit</em> inainte de a incepe studiul acestuia, pentru o mai buna intelegere a lui.</p>
 <pre class="mermaid"><code>graph TD
-    bklab([siispm])
-    bklab_static([staticbl \n STATIC siispm \n server])
-    bklab_dynamic([dynbl \n DYNAMIC siispm \n server])
+    bklab([SIISPM])
+    bklab_static([staticbl \n STATIC SIISPM \n server])
+    bklab_dynamic([dynbl \n DYNAMIC SIISPM \n server])
 
     bklab ---- bklab_static
     bklab ---- bklab_dynamic
@@ -840,17 +840,17 @@
 <li>Se atrage atentia asupra tratarii corecte din punct de vedere conceptual a notiunilor de <code>server</code>  si <code>client</code>. Arhitectura conceptuala de client-server este pe deplin implementata cu respectarea tuturor principiilor aferente si o consitentizare a acestui lucru va permite o intelegere corecta a detaliilor tehnice ale sistemului de catre echipa tehnica de lucru.</li>
 <li>In general in toata documentatia produsului prin termenul <em>CLIENT</em> se va intelege si partea de <em>CLIENT FRONTEND</em> iar prin cea de <em>SERVER</em> si partea de <em>SERVER BACKEND</em>.</li>
 <li>Locatiile pentru <em>partea de server static</em> (componenta <strong><code>staticbl</code></strong>) sunt situate dupa o organizare clasica de site static incepind din directorul <code>docs/</code> iar codul "de start" este prezent in fisierul <code>index.html</code> (presupunind ca la utilizarea unui HTTP server anume la dorinta clientului, acesta este configurat sa functioneze asa in lipsa specificarii unui fisier in rutele URL).</li>
-<li>In general (daca nu specifica in clar altfel) <code>code-name</code> al componentelor este acelasi atit pentru SERVER cit si pentru CLIENT. Diferentierea intre acestea se intimpla deoarece raspund servere diferite pentru porturile aferente (80 client si 4111 server). Astfel pe ruta "normala" a unei componente, de ex ptr <em>NEWB</em>: <code>http://siispm.../newb</code> va raspunde intii componenta CLIENT (prezenta sub forma unui <code>index.html</code> in directorul <code>docs/newb/</code>).</li>
+<li>In general (daca nu specifica in clar altfel) <code>code-name</code> al componentelor este acelasi atit pentru SERVER cit si pentru CLIENT. Diferentierea intre acestea se intimpla deoarece raspund servere diferite pentru porturile aferente (80 client si 4111 server). Astfel pe ruta "normala" a unei componente, de ex ptr <em>NEWB</em>: <code>http://SIISPM.../newb</code> va raspunde intii componenta CLIENT (prezenta sub forma unui <code>index.html</code> in directorul <code>docs/newb/</code>).</li>
 </ul>
 </div>
 <h2 id="810-dsgn-810.02-system_landscape-sysinit-initializare-sistem">sysInit Initializare sistem</h2>
 <p>Pornirea sistemului comporta doua mari componente "on top", si anume:</p>
 <ul>
 <li>
-<p><strong><code>staticbl</code></strong> - <strong>STATIC siispm</strong> <em>serverul HTTP static</em> acesta va deservi partea de web compusa din "fisiere" statice. Acestea reprezinta fisierele HTML aferente interfetei UI dar si celelate fisiere "auxiliare" precum: CSS-uri, JS-uri, imagini, etc</p>
+<p><strong><code>staticbl</code></strong> - <strong>STATIC SIISPM</strong> <em>serverul HTTP static</em> acesta va deservi partea de web compusa din "fisiere" statice. Acestea reprezinta fisierele HTML aferente interfetei UI dar si celelate fisiere "auxiliare" precum: CSS-uri, JS-uri, imagini, etc</p>
 </li>
 <li>
-<p><strong><code>dynblsrv</code></strong> - <strong>DYNAMIC siispm</strong> <em>serverul CGI dinamic</em> ce permite rularea de scripturi Python server-side si deserveste componentele care executa operatiile necesare (de ex create carte noua). Acest server este cunoscut si sub numele de <code>siispm API</code></p>
+<p><strong><code>dynblsrv</code></strong> - <strong>DYNAMIC SIISPM</strong> <em>serverul CGI dinamic</em> ce permite rularea de scripturi Python server-side si deserveste componentele care executa operatiile necesare (de ex create carte noua). Acest server este cunoscut si sub numele de <code>SIISPM API</code></p>
 </li>
 </ul>
 <p>De asemenea referitor la initializarea sistemului trebuie spus si ca <strong><em>prima instalare a acestuia</em></strong> se face cu o serie de programe / scripturi. Nu se intra in detalii deoarece procedura de instalare a sistemului este una cit se poate de clasica pentru instalarile executate manual pe sisteme Linux iar pentru sisteme Windows acesta este tot una clasica, cu un simplu wizard "standardizat" si care executa scrierea in toate locatiile necesare (ex Registry).</p>
@@ -858,7 +858,7 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>sysInit</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>sysInit/</code></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>sysInit/</code></li>
 <li><em>locatie script PRIMA INSTALARE</em>: <code>setup/</code></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-sysinit_system_process.md"><code>810.05a-sysInit_System_Process.md</code></a></li>
 </ul>
@@ -877,8 +877,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>bcat</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>docs/data/</code> cu baza de date catalogul cartilor <code>books_catalog.json</code></li>
-<li><em>locatie STATIC siispm</em>: <code>docs/bcat/index.html</code> (<code>doc_src/index.md</code> before 1-st compilation)</li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>docs/data/</code> cu baza de date catalogul cartilor <code>books_catalog.json</code></li>
+<li><em>locatie STATIC SIISPM</em>: <code>docs/bcat/index.html</code> (<code>doc_src/index.md</code> before 1-st compilation)</li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-bcat_system_process"><code>810.05a-bcat_System_Process.md</code></a></li>
 </ul>
 </div>
@@ -889,8 +889,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>book_tmpl</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>docs/book_tmpl/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>docs/book_tmpl/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-btmpl_system_process.md">810.05a-btmpl_System_Process.md</a></li>
 </ul>
 </div>
@@ -900,8 +900,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>newb</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>newb/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>newb/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-newb_system_process.md">810.05a-newb_System_Process.md</a></li>
 </ul>
 </div>
@@ -911,8 +911,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>edtm</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>edtm/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>edtm/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-edtm_system_process.md"><code>810.05a-edtm_System_Process.md</code></a></li>
 </ul>
 </div>
@@ -922,8 +922,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>orgm</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>orgm/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>orgm/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-orgm_system_process.md"><code>810.05a-orgm_System_Process.md</code></a></li>
 </ul>
 </div>
@@ -934,8 +934,8 @@
 <ul>
 <li><em>code-name</em>: <code>prvb</code></li>
 <li><em>port for ruuning HTTP preview server</em>: <code>8111</code> (DIFFERENT than 80 which is reserved for main application)</li>
-<li><em>locatie DYNAMIC siispm</em>: <code>prvb/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>prvb/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-prvb_system_process.md"><code>810.05a-prvb_System_Process.md</code></a></li>
 </ul>
 </div>
@@ -945,8 +945,8 @@
 <p class="admonition-title">parametrii</p>
 <ul>
 <li><em>code-name</em>: <code>dplb</code></li>
-<li><em>locatie DYNAMIC siispm</em>: <code>dplb/</code></li>
-<li><em>locatie STATIC siispm</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
+<li><em>locatie DYNAMIC SIISPM</em>: <code>dplb/</code></li>
+<li><em>locatie STATIC SIISPM</em>: ...nestabilit inca... <!-- #TODO... de stabilit clar si concret  --></li>
 <li><em>Document descriere detaliata</em>: <a href="#810-dsgn-810.05a-dplb_system_process.md"><code>810.05a-dplb_System_Process.md</code></a></li>
 </ul>
 </div>
@@ -978,8 +978,8 @@
                         <h2 class='nav-section-title' id='section-detailed-level-design'>
                             Detailed Level Design <a class='headerlink' href='#section-detailed-level-design' title='Permanent link'>↵</a>
                         </h2>
-                        <section class="print-page" id="810-dsgn-810.05a-bcat_system_process"><p><img align="left" alt="siispm_logo" src="pictures/SIISPM_logo.png" width="55" />
-<small markdown><strong>siispm System</strong><br>
+                        <section class="print-page" id="810-dsgn-810.05a-bcat_system_process"><p><img align="left" alt="SIISPM_logo" src="pictures/SIISPM_logo.png" width="55" />
+<small markdown><strong>SIISPM System</strong><br>
 <em>(c) 2023 RENware Software Systems</em>
 </small><br><br></p>
 <h1 id="810-dsgn-810.05a-bcat_system_process-bcat-catalogul-cartilor">BCAT catalogul cartilor</h1>
@@ -997,7 +997,7 @@
 </div>
 <hr />
 <h2 id="810-dsgn-810.05a-bcat_system_process-catalogul-cartilor-baza-de-date">Catalogul cartilor - baza de date</h2>
-<p>Catalogul cartilor (Books Catalog) este baza de date ce contine informatii despre toate cartile ce sunt gestionate de sistemul siispm. Aceasta baza de date este in format JSON.</p>
+<p>Catalogul cartilor (Books Catalog) este baza de date ce contine informatii despre toate cartile ce sunt gestionate de sistemul SIISPM. Aceasta baza de date este in format JSON.</p>
 <p>Structura bazei de date este urmatoarea:</p>
 <div class="highlight"><pre><span></span><code>{
     &quot;data&quot;: [
@@ -1049,7 +1049,7 @@
 <p>Fisierul template in format <a href="#bcat-bcat.md">markown format poate fi accesat aici</a>.</p>
 <p><small markdown></p>
 <blockquote>
-<p>Din punct de vedere al <strong><em>proiectului siispm si nu al produsului siispm rezultat</em></strong>, trebuie remarcat ca sablonul contine portiuni cu structuri Jinja  e sunt "protejate" la prima compilare prin includerea lor in sectiuni Jinja tip <code>raw - endraw</code> astfel incit se vor regasi ca atare in fiserul HTML rezultat astfel incit sa fie avaluate corespunzator la executie (run time).
+<p>Din punct de vedere al <strong><em>proiectului SIISPM si nu al produsului SIISPM rezultat</em></strong>, trebuie remarcat ca sablonul contine portiuni cu structuri Jinja  e sunt "protejate" la prima compilare prin includerea lor in sectiuni Jinja tip <code>raw - endraw</code> astfel incit se vor regasi ca atare in fiserul HTML rezultat astfel incit sa fie avaluate corespunzator la executie (run time).
 </small></p>
 <p>Datele utilizate in template si ce vor fi randate Jinja sunt transmise prin intermediul variabilei <code>bcat_data</code>.</p>
 </blockquote>
