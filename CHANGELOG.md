@@ -10,7 +10,9 @@
 
 ## 0.2 system general landscape and concepts
 
-* wip... (last used 230920piu_a)
+* wip...
+
+* 230920piu_b fixed all entries, name of refs too booklab - refactored for `siispm` or `siipm`
 
 
 
