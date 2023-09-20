@@ -8,13 +8,18 @@
 <small>**- (F)** mark items that are FEATURES</small>
 
 
-## 0.3 system general landscape and concepts
+* #FIXME tbd... ref 230920piu_a NOTIFICAREA si RAPORTAREA sunt identice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers.... Lasat un marcaj cu textul `FIXME aceasta cred ca ar trebui sa fie ANPM --to-- consumator | modelul acest este deja la item anterior "Raportare"`
+
+
+
+
+## 0.3 system general landscape TOP LEVEL and concepts
 
 * wip...
-* #FIXME tbd... ref 230920piu_a NOTIFICAREA si RAPORTAREA sunt identice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers...
 
-* 230920piu_a review & update System Concepts
-* 2309920piu_b partial System Landscape top level architecture & System Concepts general terms
+* 230920piu_d review & update System Landscape ref `2309920piu_b`
+* 230920piu_c review & update System Concepts ref `2309920piu_b`
+* 230920piu_b partial System Landscape top level architecture & System Concepts general terms
 
 
 
