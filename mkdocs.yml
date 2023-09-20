@@ -8,7 +8,7 @@ nav:
     - SII Protectia Mediului:
         - Vedere de ansamblu: 810-DSGN/130.02-Overview.md
         - High Level Design:
-            - Conceptele sistemului: wip.md #TODO... System Concepts...
+            - Conceptele sistemului: 810-DSGN/120.CPTS_System_Concepts.md
             - Arhitectura: 810-DSGN/810.02-System_Landscape.md
         - Detailed Level Design:
             - proces xxx: 810-DSGN/810.05a-bcat_System_Process.md #FIXME consider to change to SIIPM processes / it's just as template
