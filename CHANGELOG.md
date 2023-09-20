@@ -12,6 +12,7 @@
 
 * wip...
 
+* 230920piu_c made an initial set of pictures (`doc_src/pictures/`)
 * 230920piu_b fixed all entries, name of refs too booklab - refactored for `SIISPM` or `siipm`
 
 
