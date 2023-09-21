@@ -257,6 +257,11 @@ div.download-btn {
     Considerente de securitate
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementarea-componentei">
+    Implementarea componentei
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -407,6 +412,11 @@ div.download-btn {
     Considerente de securitate
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#implementarea-componentei">
+    Implementarea componentei
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -456,6 +466,7 @@ div.download-btn {
 <li><a href="#arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</a><ul>
 <li><a href="#c1-portal-web-servicii-electronice">(c1) Portal web servicii electronice </a><ul>
 <li><a href="#considerente-de-securitate">Considerente de securitate</a></li>
+<li><a href="#implementarea-componentei">Implementarea componentei</a></li>
 </ul>
 </li>
 <li><a href="#c2-componenta-pentru-managementul-documentelor">(c2) Componenta pentru Managementul documentelor </a></li>
@@ -530,6 +541,22 @@ div.download-btn {
 </li>
 <li>
 <p>o sectiune dedicata detaliilor in care vor fi enumerate "item-urile" aferente, de orice tip sau natura ar fi (documente, servicii, etc) si folosind un set de pictograme (icone miniaturale) diferite pentru fiecare tip / natura astfel incit sa existe un minim feedback vizual mai mult decit simplul text. Aceste item-uri vor fi deprezentate ca <code>link HTML</code> daca reprezinta ceva ce poate fi accesat "mai departe" si prezinta interes pentru utilizator pe un flux logic al acestuia</p>
+</li>
+</ul>
+<h4 id="implementarea-componentei">Implementarea componentei</h4>
+<p>Acesta componenta foloseste platforma <a href="http://nexgenai.app/v2.3.3" target="_blank"><em>Connections NexGenAI minim versiunea 2.3.3</em></a> astfel:</p>
+<ul>
+<li>
+<p><em>zonele, rutele</em> ce raspund la serviciile respective precum si regulile aferente de (web) networking sunt implementate folosind <a href="https://nexgenai.app/v2.3.3/comp_server_web.html">Componenta Server Web</a> configurata in mod <code>wsgi</code> si <code>fastCGI</code></p>
+</li>
+<li>
+<p><em>politicile si regulile de securitate</em> sunt implementate folosind <a href="https://nexgenai.app/v2.3.3/comp_identity.html">Componenta identity</a></p>
+</li>
+<li>
+<p>partea de <em>controller "heavy code" a rutelor</em> este realizata cu oricare din serverele de aplicatie din <a href="https://nexgenai.app/v2.3.3/comp_server_app.html">Componenta Server de Aplicatii</a></p>
+</li>
+<li>
+<p>partea de <em>controller tip "simple scripting code" a rutelor</em> este realizata cu oricare din serverele de aplicatie din <a href="https://nexgenai.app/v2.3.3/comp_server_web.html">Componenta Server Web</a> configurata in mod <code>CGI</code></p>
 </li>
 </ul>
 <h3 id="c2-componenta-pentru-managementul-documentelor">(c2) Componenta pentru Managementul documentelor <!--#NOTE componenta --></h3>
