@@ -15,8 +15,8 @@
 ## 0.4 system general landscape component #TODO_xxx and concepts
 
 * wip...
-* tbd... same thing as `230920piu_e` but in Sys Landscape (ref created component) WHAT COMPONENT USE from `http://nexgenai.app/v2.3.3` & mk LINK to
 
+* ... 230921piu_c updated Sys Landscape, ref component __c1__, specified WHAT COMPONENT USE from `http://nexgenai.app/v2.3.3` & mk LINK to
 * 230921piu_b updated System Landscape, prepared to load components from separated files & prepared headings for (c2), (c3)
 * 230921piu_a fixed System Overview & Landscape ref component __c1__ name
 * 230920piu_e updated System Overview doc to refer System Landscape doc for COMPLIANCE and this should be done for every component when DSGN is ready
