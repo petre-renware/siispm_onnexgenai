@@ -247,13 +247,32 @@ div.download-btn {
 <nav aria-label="Arhitectura logica nivelul TOP" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">
-    (c1) Portal web de servicii electronice (inclusiv Portal web general) 
+<a class="md-nav__link" href="#c1-portal-web-servicii-electronice">
+    (c1) Portal web servicii electronice 
+  </a>
+<nav aria-label="(c1) Portal web servicii electronice" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#considerente-de-securitate">
+    Considerente de securitate
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#considerente-de-securitate">
-    Considerente de securitate 
+<a class="md-nav__link" href="#implementarea-componentei">
+    Implementarea componentei
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c2-componenta-pentru-managementul-documentelor">
+    (c2) Componenta pentru Managementul documentelor 
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c3-componenta-pentru-aplicatii-specifice-gis">
+    (c3) Componenta pentru aplicatii specifice GIS 
   </a>
 </li>
 </ul>
@@ -383,13 +402,32 @@ div.download-btn {
 <nav aria-label="Arhitectura logica nivelul TOP" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">
-    (c1) Portal web de servicii electronice (inclusiv Portal web general) 
+<a class="md-nav__link" href="#c1-portal-web-servicii-electronice">
+    (c1) Portal web servicii electronice 
+  </a>
+<nav aria-label="(c1) Portal web servicii electronice" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#considerente-de-securitate">
+    Considerente de securitate
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#considerente-de-securitate">
-    Considerente de securitate 
+<a class="md-nav__link" href="#implementarea-componentei">
+    Implementarea componentei
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c2-componenta-pentru-managementul-documentelor">
+    (c2) Componenta pentru Managementul documentelor 
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c3-componenta-pentru-aplicatii-specifice-gis">
+    (c3) Componenta pentru aplicatii specifice GIS 
   </a>
 </li>
 </ul>
@@ -426,8 +464,13 @@ div.download-btn {
 <li><a href="#arhitectura-sistemului">Arhitectura sistemului</a><ul>
 <li><a href="#introducere">Introducere</a></li>
 <li><a href="#arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</a><ul>
-<li><a href="#c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">(c1) Portal web de servicii electronice (inclusiv Portal web general) </a></li>
-<li><a href="#considerente-de-securitate">Considerente de securitate </a></li>
+<li><a href="#c1-portal-web-servicii-electronice">(c1) Portal web servicii electronice </a><ul>
+<li><a href="#considerente-de-securitate">Considerente de securitate</a></li>
+<li><a href="#implementarea-componentei">Implementarea componentei</a></li>
+</ul>
+</li>
+<li><a href="#c2-componenta-pentru-managementul-documentelor">(c2) Componenta pentru Managementul documentelor </a></li>
+<li><a href="#c3-componenta-pentru-aplicatii-specifice-gis">(c3) Componenta pentru aplicatii specifice GIS </a></li>
 </ul>
 </li>
 <li><a href="#arhitectura-la-nivelul-componentelor-functionale-de-buisness">Arhitectura la nivelul componentelor functionale de buisness</a><ul>
@@ -449,8 +492,13 @@ div.download-btn {
 <h2 id="arhitectura-logica-nivelul-top">Arhitectura logica nivelul TOP</h2>
 <p>Nivelul de <strong>TOP</strong> reprezinta "punctul cel mai de extern de expunere si adresare a sistemului", cel care va fi folosiit in mod curent de marea majoritate a utilizatorilor. Arhitectura vazuta la acest nivel se prezinta in diagrama urmatoare:</p>
 <p><img alt="fig_01" src="../pictures/fig01_structura_sistemului.png"/></p>
-<p>La acest nivel <strong>SIISPM</strong> se prezinta ca un set de <em>servicii majore</em> si relevante pentru <em>consumatorii finali</em>. Aceste sunt asigurate prin si deservite de catre portalul principal al companiei sau de catre o pagina specializata, pagina relativ simpla ce permite accesul nerestrictionat oricarui vizitator (<em>master page</em> sau <em>landing page</em>). Aceasta componenta se refera la <a href="130.02-Overview.html#componente-generale"><strong>(c1)</strong> Portal web de servicii electronice (inclusiv Portal web general)</a> prezentata in "Vedere de ansamblu".</p>
-<h3 id="c1-portal-web-de-servicii-electronice-inclusiv-portal-web-general">(c1) Portal web de servicii electronice (inclusiv Portal web general) <!--#NOTE heading 3 --></h3>
+<p>La acest nivel <strong>SIISPM</strong> se prezinta ca un set de <em>servicii majore</em> si relevante pentru <em>consumatorii finali</em>. Aceste sunt asigurate prin si deservite de catre portalul principal al companiei sau de catre o pagina specializata, pagina relativ simpla ce permite accesul nerestrictionat oricarui vizitator (<em>master page</em> sau <em>landing page</em>). Aceasta componenta se refera la <a href="130.02-Overview.html#componente-generale"><strong>(c1)</strong> Portal web servicii electronice</a> prezentata in "Vedere de ansamblu".</p>
+<h3 id="c1-portal-web-servicii-electronice">(c1) Portal web servicii electronice <!--#NOTE componenta --></h3>
+<p>Aceasta componenta se refera la <a href="130.02-Overview.html#componente-generale">(c1) Portal web servicii electronice</a> prezentata in "Vedere de ansamblu".</p>
+<!---#NOTE ### #TODO_update_component_name#TODO (c1) Portal web servicii electronice
+    - this file will be used as included in 810.02-System_Landscape.md, so:
+    - accordingly its heading cannot be upper that Heading 3 (###)
+---->
 <p>Astfel plecind din portalul existent al companiei beneficiare, sau dintr-pagina dedicata (Master / Landing Page), sistemul va prezenta 4 tipuri de <strong>servicii majore</strong> ca <code>URL</code>-uri distincte: <!-- -#NOTE mk-UTF8 (din ANPM matrice complianta 64-67) --></p>
 <ul>
 <li>
@@ -482,7 +530,7 @@ div.download-btn {
 </li>
 </ul>
 <p>Aceste rute sunt aferente serviciilor (zonelor functionale) asigurate de sistemul SIISPM. Intre acestea se vor vor putea face redirectari ori de cite ori va fi nevoie cu respectarea regulior de securitate specifice zonei respective.</p>
-<h3 id="considerente-de-securitate">Considerente de securitate <!--#NOTE heading 3 --></h3>
+<h4 id="considerente-de-securitate">Considerente de securitate</h4>
 <p>Fiecare zona aferenta unei rute (din cele 4 enumerate mai sus) va implementa <em>propriile politici de securitate</em> (de ex autentificare si autorizare). De asemenea va fi disponibil si un <em>set de politici de securitate comun</em> tuturor zonelor, modificarea acestuia afectind toate zonele.</p>
 <p>Zonele vor mosteni setul <em>comun de reguli de securitate dar il vor putea supracsrie (overwrite)</em>. In caz de <em>conflicte</em> (colisions) intre mai multe reguli de securitate, regulile proprii zonei vor prima asupra celorlalte."</p>
 <p>O zona aferenta uni serviciu apelat de catre un consumator va permite incarcarea de documente si transferul acestora catre modulul de management de documente (<strong>(c2)</strong> Componenta pentru Managementul documentelor) prin intermediul API-ului acestuia. Confirmarea preluarii unui document se va face de catre zona de servicii dedicata notificarilor ce va fi la rindul ei apelata la incarcarea unui document insa in mod "asincron intirziat" (delayed async) pentru a evita blocarea inutila a proceselor. <!-- -#NOTE din ANPM matrice complianta 68 --></p>
@@ -495,17 +543,43 @@ div.download-btn {
 <p>o sectiune dedicata detaliilor in care vor fi enumerate "item-urile" aferente, de orice tip sau natura ar fi (documente, servicii, etc) si folosind un set de pictograme (icone miniaturale) diferite pentru fiecare tip / natura astfel incit sa existe un minim feedback vizual mai mult decit simplul text. Aceste item-uri vor fi deprezentate ca <code>link HTML</code> daca reprezinta ceva ce poate fi accesat "mai departe" si prezinta interes pentru utilizator pe un flux logic al acestuia</p>
 </li>
 </ul>
+<h4 id="implementarea-componentei">Implementarea componentei</h4>
+<p>Acesta componenta foloseste platforma <a href="http://nexgenai.app/v2.3.3" target="_blank"><em>Connections NexGenAI minim versiunea 2.3.3</em></a> astfel:</p>
+<ul>
+<li>
+<p><em>zonele, rutele</em> ce raspund la serviciile respective precum si regulile aferente de (web) networking sunt implementate folosind <a href="https://nexgenai.app/v2.3.3/comp_server_web.html">Componenta Server Web</a> configurata in mod <code>wsgi</code> si <code>fastCGI</code></p>
+</li>
+<li>
+<p><em>politicile si regulile de securitate</em> sunt implementate folosind <a href="https://nexgenai.app/v2.3.3/comp_identity.html">Componenta identity</a></p>
+</li>
+<li>
+<p>partea de <em>controller "heavy code" a rutelor</em> este realizata cu oricare din serverele de aplicatie din <a href="https://nexgenai.app/v2.3.3/comp_server_app.html">Componenta Server de Aplicatii</a></p>
+</li>
+<li>
+<p>partea de <em>controller tip "simple scripting code" a rutelor</em> este realizata cu oricare din serverele de aplicatie din <a href="https://nexgenai.app/v2.3.3/comp_server_web.html">Componenta Server Web</a> configurata in mod <code>CGI</code></p>
+</li>
+</ul>
+<h3 id="c2-componenta-pentru-managementul-documentelor">(c2) Componenta pentru Managementul documentelor <!--#NOTE componenta --></h3>
+<p>Aceasta componenta se refera la <a href="130.02-Overview.html#componente-generale">(c2) Componenta pentru Managementul documentelor</a> prezentata in "Vedere de ansamblu".</p>
+<p><img alt="wip..." src="../pictures/under_maintenance.png" width="100"/></p>
+<p>-#TODO UPCOMING... <!--#TODO update in System Overview, make reference here when ready --></p>
+<h3 id="c3-componenta-pentru-aplicatii-specifice-gis">(c3) Componenta pentru aplicatii specifice GIS <!--#NOTE componenta --></h3>
+<p>Aceasta componenta se refera la <a href="130.02-Overview.html#componente-generale">(c3) Componenta pentru aplicatii specifice GIS</a> prezentata in "Vedere de ansamblu".</p>
+<p><img alt="wip..." src="../pictures/under_maintenance.png" width="100"/></p>
+<p>-#TODO UPCOMING... <!--#TODO update in System Overview, make reference here when ready --></p>
 <h2 id="arhitectura-la-nivelul-componentelor-functionale-de-buisness">Arhitectura la nivelul componentelor functionale de buisness</h2>
 <!--#TODO se prezinta O POZA AICI CU TOATE COMPONENTELE - va fi cam mare, vezi cum o asezi sau o faci din mai multe... -->
 <p><img alt="wip..." src="../pictures/under_maintenance.png" width="100"/></p>
 <p>-#TODO UPCOMING...</p>
-<h3 id="upcoming-next-levels">UPCOMING next levels... <!--#TODO se prezinta componenta cu componenta --></h3>
+<h3 id="upcoming-next-levels">UPCOMING next levels... <!--#NOTE componenta --></h3>
+<!--#TODO se prezinta componenta cu componenta -->
+<!--#TODO update in System Overview, make reference here when ready -->
 <hr/>
 <div class="md-source-file">
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 21, 2023</span>
 </small>
 </div>
 </article>
