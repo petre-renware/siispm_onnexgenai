@@ -21,7 +21,9 @@
 
 * tbd... c1_DLD file sect ref implementare mai are nevoie si de:
     * ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
-    * wso2 integrarea cu altii (bid_req 91 - 99)
+    * wso2 integrarea cu altii (bid_req 91 - 101)
+    * forms sau ce o fi in NexGenAI ref vid_req 82
+
 
 * wip...
 
