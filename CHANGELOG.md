@@ -13,26 +13,19 @@
 
 ## 0.5 system landscape component (c1) DLD (wip...)
 
+* tbd... c1_DLD file sect ref IMPLEMENTATION mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
 
-* tvd... review, update & prepare design structure for components:
-    * [ ] doc `...c1_component...` will be refered as DLD ???#FIXME ATTN:
-    * trebuie sa fie doc independent si nu mai merge just include but need linked in Landscape
-    * pierzi textul "as first look" si plimbi omul din link in link pina vede...
-    * iti trebuie si detaliile actuale din bid_req_doc, cele ref la (c1) peste ce ai scris - **le poti face sectiuni level 4 #### in ...c1_component... doc**
-
-* tbd... c1_DLD file sect ref implementare mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
-
-* -#NOTE_IMP tbd... to create anchors in doc (bid item # ref for example) use as here `https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown`
+* -#NOTE_IMP_#NOTE tbd... to create anchors in doc (for bid item # ref for example) use __`<a name="abcd"></a>`__ (as here `https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown`) - try in system landscape component c1 (& ATTN this doc should be treated as part of System Landscape when make references)
 
 
 * wip...
 
 * 230922piu_b uploaded `810.02-c1_component.md` with bid_req:
-    * [x] wso2 integrarea cu altii (bid_req 91 - 101)
+    * [x] wso2 integration with other systems (bid_req 91 - 101)
     * [x] forms sau ce o fi in NexGenAI ref bid_req 82, 83 - 85
     * [x] workflow ce o fi in NexGenAI ref bid_req 71 - 76
     * [x] other bid-req ref (c1) ...Web Portal ref bid-req 77 - 81, 86 -90
-* 230922piu_a review, update Sys Landscape doc, for (c1), add in preambul (before include detailed doc) __an objective__ (from bid doc)
+* 230922piu_a review, update Sys Landscape doc, for (c1), add in preamble (before include detailed doc) __an objective__ (from bid doc)
 
 
 
