@@ -22,6 +22,7 @@
 
 * tbd... c1_DLD file sect ref implementare mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
 
+* -#NOTE_IMP tbd... to create anchors in doc (bid item # ref for example) use as here `https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown`
 
 
 * wip...
