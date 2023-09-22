@@ -20,8 +20,7 @@
     * [ ] doc `...c1_component...` will be refered as DLD ???#FIXME ATTN:
     * trebuie sa fie doc independent si nu mai merge just include but need linked in Landscape
     * pierzi textul "as first look" si plimbi omul din link in link pina vede...
-    * iti trebuie si detaliile actuale din bid_req_doc, cele ref la (c1) peste ce ai scris
-
+    * iti trebuie si detaliile actuale din bid_req_doc, cele ref la (c1) peste ce ai scris - **le poti face sectiuni level 4 #### in ...c1_component... doc**
 
 
 
