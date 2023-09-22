@@ -11,18 +11,18 @@
 * #FIXME tbd... ref 230920piu_a NOTIFICAREA si RAPORTAREA sunt identice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers.... Lasat un marcaj cu textul `FIXME aceasta cred ca ar trebui sa fie ANPM --to-- consumator | modelul acest este deja la item anterior "Raportare"`
 
 
-## 0.5 system landscape component (c1) DLD (wip...)
+## 0.5 system landscape component (c1) DLD (wip...)
 
-* wip...
-
-* 230922piu_a review, update & prepare design structure for components:
-    * [ ] Sys Landscape doc, for (c1), as preambul add also an objective (from bid doc)
+* tvd... review, update & prepare design structure for components:
     * [ ] doc `...c1_component...` will be refered as DLD ???#FIXME ATTN:
     * trebuie sa fie doc independent si nu mai merge just include but need linked in Landscape
     * pierzi textul "as first look" si plimbi omul din link in link pina vede...
     * iti trebuie si detaliile actuale din bid_req_doc, cele ref la (c1) peste ce ai scris - **le poti face sectiuni level 4 #### in ...c1_component... doc**
+    * sect ref implementare mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
 
+* wip...
 
+* 230922piu_a review, update Sys Landscape doc, for (c1), add in preambul (before include detailed doc) __an objective__ (from bid doc)
 
 
 
