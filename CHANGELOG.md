@@ -11,10 +11,12 @@
 * #FIXME tbd... ref 230920piu_a NOTIFICAREA si RAPORTAREA sunt identice.. Probabil unul este BENEFICIAR ==> CONSUMATOR si celalalt invers.... Lasat un marcaj cu textul `FIXME aceasta cred ca ar trebui sa fie ANPM --to-- consumator | modelul acest este deja la item anterior "Raportare"`
 
 
-## 0.5 system landscape component #TODO_set_me
+## 0.5 system landscape component (c1) DLD (wip...)
 
 * wip...
 
+* 230922piu_a review, update & prepare design structure for components:
+    * [ ] what exists now as doc to be included in Sys Landscape ...
 
 
 
@@ -34,7 +36,8 @@
 
 
 
--#NOTE to be archived from here to down .................
+-#NOTE ... ... to be archived from here to down ... ...
+
 ## 0.4 system landscape component c1
 
 * 230921piu_c updated Sys Landscape, ref component __c1__, specified WHAT COMPONENT USE from `http://nexgenai.app/v2.3.3` & mk LINK to
