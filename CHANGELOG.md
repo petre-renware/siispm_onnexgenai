@@ -18,7 +18,10 @@
     * trebuie sa fie doc independent si nu mai merge just include but need linked in Landscape
     * pierzi textul "as first look" si plimbi omul din link in link pina vede...
     * iti trebuie si detaliile actuale din bid_req_doc, cele ref la (c1) peste ce ai scris - **le poti face sectiuni level 4 #### in ...c1_component... doc**
-    * sect ref implementare mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
+
+* tbd... c1_DLD file sect ref implementare mai are nevoie si de:
+    * ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
+    * wso2 integrarea cu altii (bid_req 91 - 99)
 
 * wip...
 
