@@ -15,7 +15,7 @@
 
 * tbd... c1_DLD file sect ref IMPLEMENTATION mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
 
-* -#NOTE_IMP_#NOTE tbd... to create anchors in doc (for bid item # ref for example) use __`<a name="abcd"></a>`__ (as here `https://stackoverflow.com/questions/6695439/how-to-link-to-a-named-anchor-in-multimarkdown`) - try in system landscape component c1 (& ATTN this doc should be treated as part of System Landscape when make references)
+* tbd... component (c1), according to bid-req 5.1.3 ("Specificații tehnice minimale pentru platforma de dezvoltare și administrare aplicații web") THERE IS NEEDED A NEW COMPONENT NOT EXISTING IN NexGenAI ==> most probably `LifeRay` solve the problem
 
 
 * wip...
@@ -25,6 +25,7 @@
     * [x] forms sau ce o fi in NexGenAI ref bid_req 82, 83 - 85
     * [x] workflow ce o fi in NexGenAI ref bid_req 71 - 76
     * [x] other bid-req ref (c1) ...Web Portal ref bid-req 77 - 81, 86 -90
+
 * 230922piu_a review, update Sys Landscape doc, for (c1), add in preamble (before include detailed doc) __an objective__ (from bid doc)
 
 
