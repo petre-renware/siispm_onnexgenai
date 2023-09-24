@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2023-09-24T02:10:52.946Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="6w4iLVwzn_c0D3m9liHU" version="21.7.5" type="device">
+  <diagram id="6I0OCvxSQrVGMHxT2VVA" name="Page-1">
+    <mxGraphModel dx="1221" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nuiKNai8XmV5EJlLWwef-28" value="fig00 Modelul Arhitectural SIISPM" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fontFamily=Helvetica;fontSize=18;fontColor=#000000;fillColor=#ffffff;verticalAlign=top;align=center;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="70" y="140" width="450" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nuiKNai8XmV5EJlLWwef-6" value="punct central (basic endpoint) de intrare in sistem" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#FFD966;shape=mxgraph.archimate3.application;appType=comp;archiType=square;strokeColor=#000000;verticalAlign=middle;align=center;fontSize=12;fontStyle=0;fontColor=#000000;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="128" y="250" width="148" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="nuiKNai8XmV5EJlLWwef-9" value="" style="endArrow=none;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#000000;" parent="1" source="nuiKNai8XmV5EJlLWwef-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-28.004736842105217" y="407" as="sourcePoint" />
+            <mxPoint x="202" y="247" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nuiKNai8XmV5EJlLWwef-19" value="componenta functionala" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d79b00;fontFamily=Helvetica;fontSize=12;fillColor=#ffe6cc;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="393" y="366" width="78" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_-VVkd6slLK817akx4SB-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.015;exitY=0.4;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#000000;strokeWidth=3;" parent="1" source="_-VVkd6slLK817akx4SB-2" target="nuiKNai8XmV5EJlLWwef-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_-VVkd6slLK817akx4SB-2" value="&lt;font color=&quot;#000000&quot;&gt;Internet&lt;/font&gt;" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;strokeColor=#000000;fillColor=#fcfcfc;" parent="1" vertex="1">
+          <mxGeometry x="422" y="175" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-1" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;strokeColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="nuiKNai8XmV5EJlLWwef-6" target="nuiKNai8XmV5EJlLWwef-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="540" as="sourcePoint" />
+            <mxPoint x="660" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-2" value="1. request for&lt;br&gt;an operation&lt;br&gt;or data" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#FFFFFF;fontColor=#000000;" connectable="0" vertex="1" parent="VR07zbA7lunpqd0HmzvT-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-5" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;strokeColor=#000000;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="nuiKNai8XmV5EJlLWwef-19" target="nuiKNai8XmV5EJlLWwef-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="296" y="492" as="sourcePoint" />
+            <mxPoint x="413" y="524" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-6" value="2. response&lt;br&gt;with required unfo" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;labelBackgroundColor=#FFFFFF;fontColor=#000000;" connectable="0" vertex="1" parent="VR07zbA7lunpqd0HmzvT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-7" value="componenta functionala&lt;br&gt;&lt;i&gt;... n ...&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d79b00;fontFamily=Helvetica;fontSize=12;fillColor=#ffe6cc;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="410" width="78" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VR07zbA7lunpqd0HmzvT-8" value="1. req&lt;br&gt;2. resp" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;" edge="1" parent="1" source="VR07zbA7lunpqd0HmzvT-7" target="nuiKNai8XmV5EJlLWwef-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="690" as="sourcePoint" />
+            <mxPoint x="190" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

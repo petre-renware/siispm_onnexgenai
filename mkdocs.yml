@@ -13,6 +13,7 @@ nav:
         - Detailed Level Design:
             - proces xxx: 810-DSGN/810.05a-bcat_System_Process.md #FIXME consider to change to SIIPM processes / it's just as template
         - Lista imaginilor:
+            - fig00 Modelul Arhitectural Sistem: pictures/fig00_modelul_arhitectural_SIISPM.png
             - fig01 Struct Generala Sistem: pictures/fig01_structura_sistemului.png
     - Manual SIIPM (PDF): pdfs/print_page.html/print_page.pdf
     - About:

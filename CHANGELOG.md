@@ -13,12 +13,12 @@
 
 ## 0.5 system landscape component (c1) DLD (wip...)
 
-* tbd... c1_DLD file sect ref IMPLEMENTATION mai are nevoie si de ceva forme ptr controale list, input, CU CE FACI din NexGenAI ?
-
 * tbd... component (c1), according to bid-req 5.1.3 ("Specificații tehnice minimale pentru platforma de dezvoltare și administrare aplicații web") THERE IS NEEDED A NEW COMPONENT NOT EXISTING IN NexGenAI ==> most probably `LifeRay` solve the problem
 
 
 * wip...
+
+* 230924piu_a System Overview def system as a Service Oriented Architecture
 
 * 230922piu_b uploaded `810.02-c1_component.md` with bid_req:
     * [x] wso2 integration with other systems (bid_req 91 - 101)
