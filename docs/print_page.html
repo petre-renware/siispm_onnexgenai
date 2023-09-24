@@ -484,6 +484,20 @@
   
   
     <li class="md-nav__item">
+      <a href="pictures/fig00_modelul_arhitectural_SIISPM.png" class="md-nav__link">
+        fig00 Modelul Arhitectural Sistem
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="pictures/fig01_structura_sistemului.png" class="md-nav__link">
         fig01 Struct Generala Sistem
       </a>
@@ -696,6 +710,7 @@
 <ul>
 <li><a href="#810-dsgn-130.02-overview-sistem-informational-integrat-specializat-pentru-protectia-mediului">Sistem Informational Integrat Specializat pentru Protectia Mediului</a><ul>
 <li><a href="#810-dsgn-130.02-overview-ce-este-sispm">Ce este SISPM</a></li>
+<li><a href="#810-dsgn-130.02-overview-modelul-general-sii">Modelul general SII</a></li>
 <li><a href="#810-dsgn-130.02-overview-aria-de-acoperire">Aria de acoperire</a><ul>
 <li><a href="#810-dsgn-130.02-overview-componente-generale">Componente generale</a></li>
 <li><a href="#810-dsgn-130.02-overview-componente-si-module-specifice-protectiei-mediului">Componente si module specifice protectiei mediului</a></li>
@@ -711,6 +726,21 @@
 <h2 id="810-dsgn-130.02-overview-ce-este-sispm">Ce este SISPM</h2>
 <p>Acest sistem este o solutie proiectata si elaborata pentru domeniul de <strong>"Protectie a Mediului"</strong>.</p>
 <p>Solutia este bazata pe platforma <a href="http://nexgenai.app/v2.3.3" target="_blank"><em>Connections NexGenAI minim versiunea 2.3.3</em></a> si foloseste cu precadere componentele acesteia.</p>
+<h2 id="810-dsgn-130.02-overview-modelul-general-sii">Modelul general SII</h2>
+<p>Modelul general a sistemului este bazat pe o structura arhitecturala orientata pe servicii (Service Oriented Architecture) si adaptata tehnologiilor moderne si actuale (mai bine definite, structurate si performante). In acest sens din modelul SOA istoric-original modelele ce vizeaza datele au fost cu precadre inlocuite cu structuri <code>JSON</code> in locul celor <code>XML</code> <em>fara insa a renunta in totalitate la modelele <code>XML</code></em> pentru a asigura patrarea compatibilitatii (<em>backward compatibility</em>).</p>
+<div class="admonition tip">
+<p class="admonition-title">Avantajele acestui model arhitectural</p>
+<p>In aceasta structura arhitecturala a sistemului, toate componentele functionale se constituie ca servcii ce ruleaza <em>independent</em>, nu creaza interferente "blocante" cu celelelte componente si pot fi abordate independent ca si implementare dar si functional, cu efectte benefice asupra gradului de <em>MENTENABILITATE GENERALA A SISTEMULUI</em>.</p>
+</div>
+<p>In acesta arhietctura exista un punct central (basic endpoint) de intrare in sistem (deservit de un nod ce poate comporta orice nivele de scalabilitate si inalta disponibilitate gen: load balancing, clustering, activ-pasiv fail over, etc).</p>
+<p><img alt="fig00 Modelul Arhitectural Sistem" src="pictures/fig00_modelul_arhitectural_SIISPM.png" /></p>
+<p>Ca si functionnare generala, fara a intra in amanunte. toate componentele functionale se constiuie in servcii ce au diferite capabilitati (se va pleca de la un exemplu pentru o compoenta X, acesteia i se va asocia ruta generala <strong><code>&lt;SERVER_ROOT&gt;/&lt;componenta_X&gt;/&lt;operatie specifica&gt;</code></strong>), astfel:</p>
+<ul>
+<li>a raspunde un path anume, aiguart in exemplu se segmentul de ruta <code>&lt;componenta_X&gt;</code></li>
+<li>de a efectuat o comanda anume specificata print segmentul de ruta <code>&lt;operatie specifica&gt;</code> (model <em>JSON RPC</em>)</li>
+<li>de a intoarce un raspuns in forice ormat (Content Type) necesar: HTML, JSON, file, binary content, etc, practic orice MIME standard acceptat de standardul HTTP</li>
+<li>de a raspunde la orice metoda standard HTTP relevanta in contextul operatiei cerute: <code>GET</code>, <code>POST</code>, <code>PATCH</code>, <code>DELETE</code>, etc</li>
+</ul>
 <h2 id="810-dsgn-130.02-overview-aria-de-acoperire">Aria de acoperire</h2>
 <p><small markdown></p>
 <div class="admonition warning">
@@ -841,6 +871,7 @@
 <li><a href="#810-dsgn-120.cpts_system_concepts-conceptele-sistemului">Conceptele sistemului</a><ul>
 <li><a href="#810-dsgn-120.cpts_system_concepts-introducere">Introducere</a></li>
 <li><a href="#810-dsgn-120.cpts_system_concepts-definitii-si-termeni">Definitii si termeni</a></li>
+<li><a href="#810-dsgn-120.cpts_system_concepts-acronime">Acronime</a></li>
 </ul>
 </li>
 </ul>
@@ -856,6 +887,11 @@
 <dd>reprezinta orice utilizator final ce acceseaza sistemul in scopul rezolvarii unor doleante proprii in relatie cu "Beneficiarul". Din punct de veder al sistemului nu se face diferenta intre consumatori persoane fizice si consumatori persoane juridice, acest fiind un aspect reglementat prin <em>roluri si drepturi de acces</em></dd>
 <dt><strong>Servicii (asigurate de sistem)</strong></dt>
 <dd>reprezinta orice serviciu pe care sistemul in ofera il forma electronica catre potentialii sai consumatori, INDIFERENT de materializarea formei electronice sub care il ofera (acces <em>GUI</em> dintr-un browser, acces <em>TUI</em> (Text User Interface) dintr-un terminal, acces la nivel de <em>API</em>, etc)</dd>
+</dl>
+<h2 id="810-dsgn-120.cpts_system_concepts-acronime">Acronime</h2>
+<dl>
+<dt><strong>SISPM, SIISPM, SIIPM</strong></dt>
+<dd>Toti acesti termeni sunt complet interschimbabili si desemneaza sistemul ce face obiectul acestei solutii. Termenul initial <strong>SISPM</strong> desemneaza "Sistem Informational Specializat pentru Protectia Mediului" si datorita diversitatii culturale a echipei de lucru, denumirea a mai capatat in timp si termenul ca "Integrat" rezultind <strong>SIISPM</strong> sau a fost eliminat termenul "Specializat" rezultind <strong>SIIPM</strong>. Este posibil sa mai existe in documentati a si alte combinatii, insa oricare ar fi, toate desemneaza sistemul ce face obiectul acestei solutii, asa cum este stabilit in <a href="#810-dsgn-130.02-overview-ce-este-sispm">documentul "Vedere de ansamblu", sectiunea "Ce este SISPM"</a>.</dd>
 </dl>
 <p><img alt="wip..." src="pictures/under_maintenance.png" width="100" /></p>
 <p>-#TODO UPCOMING...</p></section><section class="print-page" id="810-dsgn-810.02-system_landscape"><p><img align="left" alt="SIISPM_logo" src="pictures/SIISPM_logo.png" width="55" />
@@ -902,8 +938,10 @@
 <!---#NOTE ### #TODO_update_component_name#TODO (c1) Portal web servicii electronice
     - this file will be used as included in 810.02-System_Landscape.md, so:
     - accordingly its heading cannot be upper that Heading 3 (###)
+    - ATTN: this file is used as INCLUDED in `810.02-System_Landscape` SO USE ANY LINKS / REFERENCES AS IT WOULD BE PART OF PARENT DOC
 ---->
-<p>Astfel plecind din portalul existent al companiei beneficiare, sau dintr-pagina dedicata (Master / Landing Page), sistemul va prezenta 4 tipuri de <strong>servicii majore</strong> ca <code>URL</code>-uri distincte: <!-- -#NOTE mk-UTF8 (din ANPM matrice complianta 64-67) --></p>
+<!-- -#NOTE din ANPM matrice complianta 64-67 -->
+<p>Astfel plecind din portalul existent al companiei beneficiare, sau dintr-pagina dedicata (Master / Landing Page), sistemul va prezenta 4 tipuri de <strong>servicii majore</strong> ca <code>URL</code>-uri distincte:</p>
 <ul>
 <li>
 <p><strong>Solicitare</strong> – servicii prin care consumatorii transmit catre beneficiar o solicitare si in urma procesarii acesteia de catre beneficiar primesc un document de raspuns</p>
@@ -937,8 +975,10 @@
 <h4 id="810-dsgn-810.02-system_landscape-considerente-de-securitate">Considerente de securitate</h4>
 <p>Fiecare zona aferenta unei rute (din cele 4 enumerate mai sus) va implementa <em>propriile politici de securitate</em> (de ex autentificare si autorizare). De asemenea va fi disponibil si un <em>set de politici de securitate comun</em> tuturor zonelor, modificarea acestuia afectind toate zonele.</p>
 <p>Zonele vor mosteni setul <em>comun de reguli de securitate dar il vor putea supracsrie (overwrite)</em>. In caz de <em>conflicte</em> (colisions) intre mai multe reguli de securitate, regulile proprii zonei vor prima asupra celorlalte."</p>
-<p>O zona aferenta uni serviciu apelat de catre un consumator va permite incarcarea de documente si transferul acestora catre modulul de management de documente (<strong>(c2)</strong> Componenta pentru Managementul documentelor) prin intermediul API-ului acestuia. Confirmarea preluarii unui document se va face de catre zona de servicii dedicata notificarilor ce va fi la rindul ei apelata la incarcarea unui document insa in mod "asincron intirziat" (delayed async) pentru a evita blocarea inutila a proceselor. <!-- -#NOTE din ANPM matrice complianta 68 --></p>
-<p>Pentru toate zonele aferente serviciilor (enumerate in sectiunea anterioara) vor prezenta: <!-- -#NOTE din ANPM matrice complianta 70 --></p>
+<!-- -#NOTE din ANPM matrice complianta 68 -->
+<p>O zona aferenta unui serviciu apelat de catre un consumator va permite incarcarea de documente si transferul acestora catre modulul de management de documente (<strong>(c2)</strong> Componenta pentru Managementul documentelor) prin intermediul API-ului acestuia. Confirmarea preluarii unui document se va face de catre zona de servicii dedicata notificarilor ce va fi la rindul ei apelata la incarcarea unui document insa in mod "asincron intirziat" (delayed async) pentru a evita blocarea inutila a proceselor.</p>
+<!-- -#NOTE din ANPM matrice complianta 70 -->
+<p>Pentru toate zonele aferente serviciilor (enumerate in sectiunea anterioara) vor prezenta:</p>
 <ul>
 <li>
 <p>o sectiune introductiva ("marcata" grafic distinct pentru vizibilitate) ce va cuprinde o descriere a serviciului respectiv urmata de</p>
@@ -947,6 +987,77 @@
 <p>o sectiune dedicata detaliilor in care vor fi enumerate "item-urile" aferente, de orice tip sau natura ar fi (documente, servicii, etc) si folosind un set de pictograme (icone miniaturale) diferite pentru fiecare tip / natura astfel incit sa existe un minim feedback vizual mai mult decit simplul text. Aceste item-uri vor fi deprezentate ca <code>link HTML</code> daca reprezinta ceva ce poate fi accesat "mai departe" si prezinta interes pentru utilizator pe un flux logic al acestuia</p>
 </li>
 </ul>
+<p>-#TODO workflow ce o fi in NexGenAI - also update <strong>Implementarea componentei</strong> with NexGenAI <code>business workflow / camunda</code> component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 71 - 76 -->
+
+<p>Accesarea unui serviciu în formă electronică presupune parcurgerea de către utilizator a unei succesiuni de activități asistate de Portal. Serviciile electronice vor fi centrate pe activități şi pe finalitatea acestora, constând într-o succesiune de pași care includ, după caz:</p>
+<ul>
+<li>ecrane de informare;</li>
+<li>ecrane care conțin formulare web care trebuie completate, cu atașarea de fișiere (fotografii, documente scanate);</li>
+<li>ecrane care permit încărcarea de fișiere structurate de tip xml sau csv;</li>
+<li>ecrane care permit geolocalizarea in timp real a operatorului;</li>
+<li>ecrane prin care se facilitează plata electronica a tarifelor percepute pentru serviciile solicitate</li>
+<li>ecrane de vizualizare a unor documente generate automat de către Portal, în baza informațiilor furnizate până la acel moment.</li>
+</ul>
+<p>-#TODO wso2 integrarea cu altii - also update <strong>Implementarea componentei</strong> with NexGenAI <code>integrator</code> component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 91 -->
+<p>Portalul web se va integra prin servicii web cel putin cu urmatoarele instituții: (#NOTE list is not realy important here but as refrence is ok)
+- Ministerul Mediului, Apelor și Pădurilor
+- Garda Națională de Mediu
+- Administrația Fondului pentru Mediu
+- ARBDD
+- Regia Autonomă Romsilva
+- ONRC
+- ANAF
+- ANCPI
+- Ghiseul.ro</p>
+<!-- -#NOTE din ANPM matrice complianta 100 - 101 -->
+<p>Portalul web de servicii electronice se va integra prin REST API cu platforma ghiseul.ro în scopul facilitării plății serviciilor furnizate de ANPM către persoanele fizice și juridice. Portalul web de servicii electronice ca îndeplini astfel următoarele cerințe:</p>
+<ul>
+<li>va dispune de interfețe standardizate care să permită includerea în fluxurile de lucru aferente serviciilor electronice a unui pas ce presupune efectuarea unei plăți electronice;</li>
+<li>va dispune de o interfață internă care să permită gestiunea tarifelor de către personalul ANPM.</li>
+</ul>
+<p>-#TODO forms sau ce o fi in NexGenAI - also update <strong>Implementarea componentei</strong> with NexGenAI component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 82 -->
+<p>Formularele web vor realiza, pentru unele câmpuri, validări ale datelor introduse de utilizator, pentru verificarea respectării unor constrângeri referitoare la: localizarea spațială a utilizatorului , tipul informațiilor care trebuie completate, lungimea minimă sau maximă a textului, la limite ale valorilor numerice sau ale datelor calendaristice.</p>
+<!-- -#NOTE din ANPM matrice complianta 83 -85 -->
+
+<p>Formularele web completate de utilizator vor fi interpretate în timp real de sistem, indicând utilizatorului următoarea activitate necesară în vederea finalizării demersului dorit, activitate care poate include:</p>
+<ul>
+<li>completarea altui formular;</li>
+<li>încărcarea de fișiere de tip imagine;</li>
+<li>încărcarea de fișiere structurate .xml sau .csv</li>
+</ul>
+<p>-#TODO other bid-req - also update <strong>Implementarea componentei</strong> with NexGenAI component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 77 -->
+<p>Având în vedere complexitatea datelor/rapoartelor ce trebuie completate de către operatorii economici în cadrul serviciilor/aplicațiilor publice și timpul mare de operare necesar pentru completare, soluția tehnică propusă va trebui să poată simplifica extrem de mult acest proces prin punerea la dispoziția operatorilor și a unui mecansim de completare a datelor/rapoartelor cu condiția păstrării nomenclatoarelor comune aferente serviciilor;</p>
+<p>-#TODO other bid-req - also update <strong>Implementarea componentei</strong> with NexGenAI component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 78 - 79 -->
+<p>Soluția tehnică va fi descrisă în etapa de analiză și proiectare, luând în considerare cel puțin, dar fără a se limita, la opțiunile tehnologice descrise mai jos: </p>
+<ul>
+<li>
+<p>o realizarea unor formulare inteligente care pot fi ulterior completării urcate în aplicație/serviciul public unde vor fi supuse procesului de validare. Formularele aferente serviciilor electronice vor fi realizate în tehnologie web şi vor putea fi completate de utilizator direct din browser, fără a fi necesară instalarea de componente software suplimentare</p>
+</li>
+<li>
+<p>o realizarea unei aplicații de tip client/desktop ce poate fi descarcată de pe site-ul instituției și utilizată local, fără a fi necesară conectarea la o aplicație web. Rezultatul final ar putea fi exportat într-un fișier cu un format convenabil pentru aplicația/serviciul public și acesta urcat și validat în aplicație/serviciul public</p>
+</li>
+</ul>
+<p>-#TODO other bid-req - also update <strong>Implementarea componentei</strong> with NexGenAI component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 80 -->
+<p>Formularele web care compun serviciile electronice vor include pentru unele câmpuri controale de culegere a informației de tip text simplu, text multilinie, lista de selecție valori dintr-un nomenclator, bifă (checkbox).</p>
+<p>-#TODO other bid-req - also update <strong>Implementarea componentei</strong> with NexGenAI component refrence</p>
+<!-- -#NOTE din ANPM matrice complianta 81 -->
+<p>În cazul listelor de valori care au la bază nomenclatoare gestionate în alte aplicații/module/componente software din scopul acestui proiect, Portalul va permite integrarea cu acestea prin servicii web, astfel încât să se evite dublarea informației şi apariția desincronizărilor între diferitele versiuni ale unui nomenclator utilizate în cadrul diferitelor aplicații.</p>
+<!-- -#NOTE din ANPM matrice complianta 86 -->
+<p>Vor fi implementate reguli referitoare la obligativitatea atașării anumitor tipuri de documente scanate (de exemplu dovadă plată, contract, etc.). Regulile vor fi dependente de tipul de demers (serviciu electronic) şi de opțiunile selectate de către utilizator în cadrul formularului web.</p>
+<!-- -#NOTE din ANPM matrice complianta 87 -->
+<p>În procesul de completare a formularelor web, sistemul va inițializa formularul (sau câmpuri ale acestuia) cu unele dintre informațiile structurate salvate în cadrul profilului utilizatorului.</p>
+<!-- -#NOTE din ANPM matrice complianta 88 -->
+<p>Utilizatorii autentificați vor putea accesa și vizualiza în mod organizat istoricul solicitărilor/notificărilor/raportărilor trimise către instituție și stadiul procesării acestora.</p>
+<!-- -#NOTE din ANPM matrice complianta 89 -->
+<p>În cazul serviciilor electronice prin care se depune o solicitare (cum ar fi de exemplu ”Avizarea transportului de deșeuri” ), la finalizarea procesului aferent depunerii cererii, Portalul va genera un document electronic (pdf) care cuprinde toate informațiile completate de către solicitant în formularele web aferente pașilor de proces deja urmați, pentru a permite solicitantului să verifice toate informațiile introduse înainte de transmiterea solicitării. Generarea documentelor electronice în baza informațiilor structurate completate de către solicitant în formularele web se va baza pe șabloane configurabile, în care vor fi incluse atât informații structurate culese din formularele aferente serviciului electronic cât şi paragrafe formatate de text predefinit.</p>
+<!-- -#NOTE din ANPM matrice complianta 90 -->
+<p>Ulterior transmiterii unei solicitări/raportări/notificări, utilizatorul este notificat automat de către Portal prin email despre stadiul procesării şi poate vizualiza online stadiul acesteia, utilizând un link inclus în mesajul email primit.</p>
 <h4 id="810-dsgn-810.02-system_landscape-implementarea-componentei">Implementarea componentei</h4>
 <p>Acesta componenta foloseste platforma <a href="http://nexgenai.app/v2.3.3" target="_blank"><em>Connections NexGenAI minim versiunea 2.3.3</em></a> astfel:</p>
 <ul>
