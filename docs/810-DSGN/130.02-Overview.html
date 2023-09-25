@@ -437,18 +437,24 @@ div.download-btn {
 <p>Acest sistem este o solutie proiectata si elaborata pentru domeniul de <strong>"Protectie a Mediului"</strong>.</p>
 <p>Solutia este bazata pe platforma <a href="http://nexgenai.app/v2.3.3" target="_blank"><em>Connections NexGenAI minim versiunea 2.3.3</em></a> si foloseste cu precadere componentele acesteia.</p>
 <h2 id="modelul-general-sii">Modelul general SII</h2>
-<p>Modelul general a sistemului este bazat pe o structura arhitecturala orientata pe servicii (Service Oriented Architecture) si adaptata tehnologiilor moderne si actuale (mai bine definite, structurate si performante). In acest sens din modelul SOA istoric-original modelele ce vizeaza datele au fost cu precadre inlocuite cu structuri <code>JSON</code> in locul celor <code>XML</code> <em>fara insa a renunta in totalitate la modelele <code>XML</code></em> pentru a asigura patrarea compatibilitatii (<em>backward compatibility</em>).</p>
+<p>Modelul general a sistemului este bazat pe o structura arhitecturala orientata pe servicii (Service Oriented Architecture) si adaptata tehnologiilor moderne si actuale (mai bine definite, structurate si performante). In acest sens din modelul istoric-original SOA modelele ce vizeaza datele au fost cu precadre inlocuite cu structuri <code>JSON</code> in locul celor <code>XML</code> <em>fara insa a renunta in totalitate la modelele <code>XML</code></em> pentru a asigura patrarea compatibilitatii (<em>backward compatibility</em>).</p>
 <div class="admonition tip">
 <p class="admonition-title">Avantajele acestui model arhitectural</p>
-<p>In aceasta structura arhitecturala a sistemului, toate componentele functionale se constituie ca servcii ce ruleaza <em>independent</em>, nu creaza interferente "blocante" cu celelelte componente si pot fi abordate independent ca si implementare dar si functional, cu efectte benefice asupra gradului de <em>MENTENABILITATE GENERALA A SISTEMULUI</em>.</p>
-</div>
-<p>In acesta arhietctura exista un punct central (basic endpoint) de intrare in sistem (deservit de un nod ce poate comporta orice nivele de scalabilitate si inalta disponibilitate gen: load balancing, clustering, activ-pasiv fail over, etc).</p>
-<p><img alt="fig00 Modelul Arhitectural Sistem" src="../pictures/fig00_modelul_arhitectural_SIISPM.png"/></p>
-<p>Ca si functionnare generala, fara a intra in amanunte. toate componentele functionale se constiuie in servcii ce au diferite capabilitati (se va pleca de la un exemplu pentru o compoenta X, acesteia i se va asocia ruta generala <strong><code>&lt;SERVER_ROOT&gt;/&lt;componenta_X&gt;/&lt;operatie specifica&gt;</code></strong>), astfel:</p>
+<p>In aceasta structura arhitecturala a sistemului, toate componentele functionale se constituie ca servcii ce:</p>
 <ul>
-<li>a raspunde un path anume, aiguart in exemplu se segmentul de ruta <code>&lt;componenta_X&gt;</code></li>
-<li>de a efectuat o comanda anume specificata print segmentul de ruta <code>&lt;operatie specifica&gt;</code> (model <em>JSON RPC</em>)</li>
-<li>de a intoarce un raspuns in forice ormat (Content Type) necesar: HTML, JSON, file, binary content, etc, practic orice MIME standard acceptat de standardul HTTP</li>
+<li>ruleaza <em>independent</em></li>
+<li>nu creaza interferente "blocante" cu celelelte componente</li>
+<li>pot fi abordate independent ca si implementare dar si functional, cu efectte benefice asupra gradului de <em>MENTENABILITATE GENERALA A SISTEMULUI</em>.</li>
+</ul>
+</div>
+<p>In acesta arhietctura exista un punct central (<em>basic endpoint</em>) de intrare in sistem. Acesta este deservit de un nod ce poate comporta orice nivele de scalabilitate si inalta disponibilitate gen: load balancing, clustering, activ-pasiv fail over, etc.</p>
+<p>In plus acest nod constituie o premisa suplimentara simpla, clasica si standardizata de <em>"izolare"</em> a componentelor sistemului la nivel TCP (de exemplu serevrul de baza de date poate si izolat la accesul direct din exterior ci numai prin internediul nodului "basic endpoint" care va putea comtrola astfel accesul si autoorizarile).</p>
+<p><img alt="fig00 Modelul Arhitectural Sistem" src="../pictures/fig00_modelul_arhitectural_SIISPM.png"/></p>
+<p>Ca si functionnare generala, fara a intra in amanunte. toate componentele functionale se constiuie in servcii ce au diferite capabilitati (pentru exemplificare se va pleca de la un exemplu pentru o componenta oarecare X, acesteia i se va asocia ruta URL/URI generala <strong><code>&lt;SERVER_ROOT&gt;/&lt;componenta_X&gt;/&lt;operatie specifica&gt;</code></strong>. Astfel capabilitatile necesare sunt:</p>
+<ul>
+<li>de a raspunde la request pe un path anume, aiguart in exemplu se segmentul de ruta <code>&lt;componenta_X&gt;</code></li>
+<li>de a efectuat o comanda specificata print segmentul de ruta <code>&lt;operatie specifica&gt;</code> (asigurind astfel baza pentru un model <em>JSON RPC</em>)</li>
+<li>de a intoarce un raspuns in orice format (Content Type) necesar: HTML, JSON, file, binary content, file, etc, practic orice <code>MIME type</code> acceptat de standardul HTTP</li>
 <li>de a raspunde la orice metoda standard HTTP relevanta in contextul operatiei cerute: <code>GET</code>, <code>POST</code>, <code>PATCH</code>, <code>DELETE</code>, etc</li>
 </ul>
 <h2 id="aria-de-acoperire">Aria de acoperire</h2>
@@ -573,7 +579,7 @@ div.download-btn {
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 24, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2023</span>
 </small>
 </div>
 </article>
