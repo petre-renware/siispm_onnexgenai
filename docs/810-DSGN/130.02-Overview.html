@@ -447,13 +447,13 @@ div.download-btn {
 <li>pot fi abordate independent ca si implementare dar si functional, cu efectte benefice asupra gradului de <em>MENTENABILITATE GENERALA A SISTEMULUI</em>.</li>
 </ul>
 </div>
-<p>In acesta arhietctura exista un punct central (<em>basic endpoint</em>) de intrare in sistem. Acesta este deservit de un nod ce poate comporta orice nivele de scalabilitate si inalta disponibilitate gen: load balancing, clustering, activ-pasiv fail over, etc.</p>
-<p>In plus acest nod constituie o premisa suplimentara simpla, clasica si standardizata de <em>"izolare"</em> a componentelor sistemului la nivel TCP (de exemplu serevrul de baza de date poate si izolat la accesul direct din exterior ci numai prin internediul nodului "basic endpoint" care va putea comtrola astfel accesul si autoorizarile).</p>
+<p>In acesta arhietctura exista un punct central (<em>basic endpoint</em>) de intrare in sistem. Acesta este deservit de un nod ce comporta orice nivele de scalabilitate si inalta disponibilitate gen: load balancing, clustering, activ-pasiv fail over, etc.</p>
+<p>In plus acest nod constituie o premisa suplimentara, simpla, clasica si standardizata de <em>"izolare"</em> a componentelor sistemului la nivel TCP (de exemplu serverul de baze de date poate izolat la accesul direct din exterior si permis a fi accesat numai prin internediul nodului "basic endpoint" care va putea controla astfel accesul si autoorizarile).</p>
 <p><img alt="fig00 Modelul Arhitectural Sistem" src="../pictures/fig00_modelul_arhitectural_SIISPM.png"/></p>
-<p>Ca si functionnare generala, fara a intra in amanunte. toate componentele functionale se constiuie in servcii ce au diferite capabilitati (pentru exemplificare se va pleca de la un exemplu pentru o componenta oarecare X, acesteia i se va asocia ruta URL/URI generala <strong><code>&lt;SERVER_ROOT&gt;/&lt;componenta_X&gt;/&lt;operatie specifica&gt;</code></strong>. Astfel capabilitatile necesare sunt:</p>
+<p>Ca si functionnare generala, fara a intra in amanunte. toate componentele functionale se constiuie in servicii ce au diferite capabilitati (pentru exemplificare se va pleca de la o componenta oarecare X, acesteia i se va asocia ruta URL/URI generala <strong><code>&lt;SERVER_ROOT&gt;/&lt;componenta_X&gt;/&lt;operatie specifica&gt;</code></strong>. Astfel capabilitatile necesare sunt:</p>
 <ul>
-<li>de a raspunde la request pe un path anume, aiguart in exemplu se segmentul de ruta <code>&lt;componenta_X&gt;</code></li>
-<li>de a efectuat o comanda specificata print segmentul de ruta <code>&lt;operatie specifica&gt;</code> (asigurind astfel baza pentru un model <em>JSON RPC</em>)</li>
+<li>de a raspunde la request pe un path anume, asiguart in exemplu de segmentul de ruta <code>&lt;componenta_X&gt;</code></li>
+<li>de a efectua o comanda specificata prin segmentul de ruta <code>&lt;operatie specifica&gt;</code> (asigurind astfel baza pentru un model <em>JSON RPC</em>)</li>
 <li>de a intoarce un raspuns in orice format (Content Type) necesar: HTML, JSON, file, binary content, file, etc, practic orice <code>MIME type</code> acceptat de standardul HTTP</li>
 <li>de a raspunde la orice metoda standard HTTP relevanta in contextul operatiei cerute: <code>GET</code>, <code>POST</code>, <code>PATCH</code>, <code>DELETE</code>, etc</li>
 </ul>
