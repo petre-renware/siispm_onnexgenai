@@ -18,14 +18,13 @@
 
 * wip...
 
+* 230925piu_a review & updated text introduced in `230924piu_a`
 * 230924piu_a System Overview def system as a Service Oriented Architecture
-
 * 230922piu_b uploaded `810.02-c1_component.md` with bid_req:
     * [x] wso2 integration with other systems (bid_req 91 - 101)
     * [x] forms sau ce o fi in NexGenAI ref bid_req 82, 83 - 85
     * [x] workflow ce o fi in NexGenAI ref bid_req 71 - 76
     * [x] other bid-req ref (c1) ...Web Portal ref bid-req 77 - 81, 86 -90
-
 * 230922piu_a review, update Sys Landscape doc, for (c1), add in preamble (before include detailed doc) __an objective__ (from bid doc)
 
 
